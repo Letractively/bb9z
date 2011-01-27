@@ -1,0 +1,920 @@
+/*
+You can use this free.
+and 悲剧的样式……
+
+更新日志及最新版本可见：http://css.bb9z.googlecode.com/hg/BaiduHi.css
+
+如此多的important……
+*/
+
+div,img,h,p,a,span{
+	padding:0px;
+	border:none;
+	margin:0px;
+}
+/* [段落]/字体
+	定义于space.css TD,DIV,Html Body Center
+	默认大小12px,行高normal
+*/
+/* \5fae\8f6f\96c5\9ed1 */
+html body,html td,html div{
+	font-family:'STXihei','Hei','XHei','Microsoft YaHei','微软雅黑','文泉驿点阵正黑','文泉驿正黑','WenQuanYi Micro Hei'!important;/* For All */
+}
+
+#main h1,h2,h3,h4,h5{
+	font-family:'STXihei','Hei','XHei','Microsoft YaHei','微软雅黑','黑体','文泉驿正黑','WenQuanYi Micro Hei'!important;/* For All */
+	font-weight:bold;
+}
+/* [段落]/大小+间距 */
+/* 分布：p仅正文及评论
+	默认页面中无h，定义的h均在正文
+*/
+h1{ /* 正文标题，仅feed可见 */
+}
+h2{ /* 节标题 */
+	font-size:1.6em;
+	margin:1.0em 0 0.3em 0;
+	border-bottom:solid 1px #aaa;
+	clear:left;
+}
+h3{
+	font-size:1.4em;
+	margin:0.7em 0 0.3em 0.5em;
+}
+h4{
+	font-size:1.2em;
+	margin:0.5em 0 0.3em 1em;
+}
+.at td,.at div{
+	font-size:1em;
+}
+p + p	{text-indent:2em;}
+code p	{text-indent:0;}
+.no_indent p{text-indent:0;}
+body{background:#444;
+/* 自定义滚动条
+scrollbar-face-color:#F2F2F2;scrollbar-shadow-color:#D2D4D4;scrollbar-highlight-color:#FFF;scrollbar-3dlight-color:#D2D4D4;scrollbar-darkshadow-color:#FFF;scrollbar-arrow-color:#D2D4D4;scrollbar-base-color:#F2F2F2;scrollbar-track-color:#FFF;
+*/}
+a{
+	border:none;
+	text-decoration:none;
+	color:#114;
+}
+a:visited	{color:#777;}
+a:hover		{color:#f90;}
+a:active	{color:#ff9;}
+/* ! 链接样式
+上面定义默认颜色，其他不一致的有#header/.tit/正文：.tag,.opt
+线型默认无线，需要加线的有，正文（除.opt）和评论内容
+*/
+.at a			{border-bottom:1px dashed #114;}
+.at a:visited	{border-bottom:1px dashed #777;}
+.at a:hover		{border-bottom:1px solid #FFE600;}
+.at a:active		{border-bottom:none;}
+.at a img{
+	border:none;
+}
+
+/* [其他] */
+code{
+	display:block;
+	margin:1em;
+	padding:0.7em 1.3em;
+	background-color:#DDE;
+	font-family:"文泉驿等宽正黑","文泉驿Unibit",Courier,Monaco,"新宋体",!important;/* For All */
+	font-size:1em;
+	border-left:solid #9B9 2px;
+}
+blockquote{
+	display:block;
+	margin:0.4em 0.7em;
+	padding:0.5em 2em;
+	background-color:#ddd;
+	border:solid #ccc 1px;
+	border-left:solid #DCC 2px;
+}
+blockquote blockquote{
+	margin:0.2em 0.5em;
+	background-color:#eee;
+	border-left:solid #CCD 2px;
+	border-right:none;
+	border-bottom:none;
+}
+hr{margin:0.7em 10px;border:solid #ddd 1px;clear:both;}
+hr.at_sec{
+	margin:1em -1.8em;
+	height:7px;
+	background:#DDD;
+}
+ul,ol{
+	margin:0;
+	padding-left:1em;
+	list-style-position:outside;
+}
+.ui-content-c,.ui-content-c ul{
+	list-style:none;
+}
+table{
+	color:#222;
+	border-collapse:collapse;
+	margin:auto;
+}
+th,td{
+	padding:0.1em 0.7em;
+}
+.at th,.at td{
+	border:1px solid;
+}
+/*{大页面布局}
+	{ main }{ header }
+	div	.stage	// 导航下面的都有了
+		table	#layout	// 主体，较上层少了上边一条缝
+			td	.c2t1	
+			td	.c2t2	// 栏中间的分隔
+			td	.c2t3	
+*/
+.userbar{
+	overflow:hidden;
+}
+#nav{
+	width:auto!important;
+}
+/* 以上是顶部bar */
+#main{
+	width:93%!important;
+	max-width:1250px!important;
+	min-width:350px!important;
+	padding:0!important;
+	padding-top:5px!important;
+}
+#header{
+	width:100%;
+	top:-8px;
+	left:0;
+	padding:0 6px;
+	box-shadow:0px 0px 13px #000;
+	-moz-box-shadow:0px 0px 13px #000;
+	-webkit-box-shadow:0px 0px 13px #000;
+}
+.stage{
+	position:relative;
+	padding:6px!important;
+	background:rgba(255,255,255,0.8);
+	_background:#ddd;
+	box-shadow:0px 0px 13px #000;
+	-moz-box-shadow:0px 0px 13px #000;
+	-webkit-box-shadow:0px 0px 13px #000;
+}
+.stagepad{
+	padding:0!important;
+}
+.c2t1,.c2t2,.c2t3{
+	padding:0!important;
+}
+#layout{
+	background-color:#ddd;
+	margin-top:-5px; !important
+}	#layout .c2t2{
+		width:10px!important;
+	}
+	#layout .c2t3{
+		width:220px!important;
+	}
+#m_blog .cnt{
+	background-color:#FFF;
+	overflow-x:scroll;
+	width:auto;
+	/*min-width:200px;*/
+}
+#m_blog{
+	/*overflow-x:scroll;*/
+}
+
+/* #header */
+#header{
+	background:#fafafa;
+	height:95px;
+}
+#header .tit{
+	top:8px;
+	left:31px;
+	background-color:#fafafa;
+}
+#header .tit a{
+	font-size:30px!important;
+	line-height:normal;
+	color:#2F4571;
+}
+	#header .tit a:hover{
+		color:#333;
+		font-weight:normal;
+	}
+#tabline{
+	top:35px;
+	height:3px!important;
+	background-color:#C8CED2;
+	background-color:rgba(0,30,50,0.2);
+	margin:0 -6px;
+}
+#header .desc{
+	top:34px;
+	right:1em;
+	font-size:20px;
+	color:#444;
+}
+
+#tab{
+	position:relative!important;
+	top:60px;
+	height:30px!important;
+	margin:0 -6px;
+	background-color:#aaa;
+	line-height:30px!important;
+	overflow:hidden;
+}
+#header #tab{width:auto!important;}
+#tab a{
+	display:block;
+	margin-right:15px;
+	padding:0 12px!important;
+	background-color:#aaa;
+	font-size:16px!important;
+	color:#FFF;
+}
+#tab a:hover{
+	background-color:FFE83F;
+	color:#222;
+}
+#tab  .on{
+	background-color:#222;
+}
+#tab span{
+	display:none;
+}
+
+/* 下方的主体 */
+.mod{		/* 模块大框 */
+}
+.modtl{	/* “圆角” */
+	display:none;
+}
+span.modtit{
+	position:relative;
+	top:8px;
+	top:0!ie;
+	left:5px;
+	padding:1px 5px;
+	margin-top:2px;
+	background-color:#806464;
+	background-color:rgba(120, 100, 100, 0.5);
+	filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#80646450',endColorstr='#64646450')";
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#80646450',endColorstr='#64646450')";
+	color:#FFF;
+	color:#544!ie;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	z-index:501;
+	
+}
+.modth{		/* 模块标题 */
+	background-color:transparent;
+}
+.modth td{padding:0;}
+.modbox+table{display:none;}
+.modbox{	/* 模块内容 */
+	background-color:#fff;
+	padding:10px;
+}
+#m_blog .tit{
+	background:#000;
+	color:#FFF;
+}
+#m_blog .tit a{
+	color:#FFF;
+	font-weight:bold;}
+#m_blog .tit a:visited	{color:#ddd;}
+#m_blog .tit a:hover	{color:#FFD;text-shadow:0 0 0.4em #FFD; }
+.line{
+	clear:both;
+	background-color:#ddd;
+	height:1em;
+	display:none;
+}
+.lc,.rc{display:none;}
+
+
+#m_blog{
+	position:relative;
+	padding:0;
+	overflow-x:visible!important;
+	z-index:500;
+	min-width:350px;
+}
+#m_blog table{width:100%;/* 不能省略 */}
+.stage #m_blog table{table-layout:fixed!important;}	/* for #m_blog table|table-layout:auto !important */
+#m_blog .tit{
+	background-color:#000;
+	font-size:1.5em;
+	line-height:1.5em;
+	padding:0.6em 1.2em 0.3em 1.2em;
+}
+#m_blog .date{
+	width:auto;
+	position:relative;
+	float:right;
+	top:-10px;
+	right:1.2em;
+	padding:0.1em 1em;
+	color:#ddd;
+	text-align:center;
+	z-index:5;
+	background-color:#828C8C;
+	background-color:rgba(130, 140, 140,0.8);
+	filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#CC828C8C',EndColorStr='#CC828C8C')";
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#CC828C8C',EndColorStr='#CC828C8C')";
+
+}
+#m_blog .line{
+	display:block;
+}
+#m_blog div.cnt{
+	position:relative;
+	overflow:visible!important;
+}
+#m_blog .more{ /* Read Full*/ 
+	top:15px;
+	padding-left:10px;
+	font-size:16px;
+	position:relative;
+	z-index:5;
+}
+#m_blog .opt{
+	position:relative;
+	right:-5px;
+	top:-5px;
+	padding:0.2em 1.2em;
+	background-color:#ddd;
+	border-top:solid 1px #aaa;
+	text-align:right;
+	z-index:3;
+}
+#m_blog #page{
+	padding:0.3em 2em;
+	font-size:1.3em;
+	background-color:#ddd;
+}
+#m_blog  #in_send{
+}
+/* 文章评论 */
+#in_comment{
+}
+#in_comment .index,#m_comment .index{
+	text-align:right;
+	font-size:25px;
+	padding:30px 0 0;
+	width:30px;
+	color:#777;
+}
+#in_comment .user,#m_comment .user {
+	padding:3px;
+}
+.ucard{
+	width:100%;
+	display:block;
+}
+#in_comment .cnt{
+	padding:0.2em;
+}
+#in_comment .date{
+	bottom:0px;
+	top:0px;
+	float:none;
+	text-align:right;
+	background-color:#FFF;
+	color:#666;
+}
+#in_comment .desc{
+	font-size:16px;
+}
+#in_comment .line,#m_comment .line {
+	height:1px!important;
+	line-height:1px;
+	display:block;
+}
+#in_comment table:nth-child(2n+1){
+	background-color:#EEF;
+}
+/* 辅助功能 */
+a[href^="http:"]{
+	padding-right:17px;
+	background:url(http://bb9z.home.lc/EIS/link/external.png) no-repeat right center;
+}
+a[href^="https:"]{
+	padding-right:17px;
+	background:url(http://bb9z.home.lc/EIS/link/sl.png) no-repeat right center;
+}
+	a[href*="BB9z"],a[href*="BBservice"],a[href^="http://hi.baidu.com"],a[href$="bb9z"]{
+		padding-right:0;
+		background-image:none;
+	}
+	a[href*="ied2k.com"]{
+		background-image:url(http://bb9z.home.lc/EIS/link/l2ied2k.png);
+	}
+	a[href*="emulefans.com"]{
+		background-image:url(http://bb9z.home.lc/EIS/link/l2emule-fans.png);
+	}
+	a[href*="verycd.com"]{
+		background-image:url(http://bb9z.home.lc/EIS/link/l2verycd.png);
+	}
+	a[href*="wikipedia.org"]{
+		background-image:url(http://bb9z.home.lc/EIS/link/l2wikipedia.png);
+	}
+.at .l2wakoopa{
+	border:none;
+	padding-right:0;
+	background-image:none;
+}
+.at .l2wakoopa img{
+	padding:0 0.5em;
+	margin:0;
+}
+a[href^="mailto:"]{
+	padding-left:16px;
+	background:url(http://bb9z.home.lc/EIS/link/mail.png) no-repeat left;
+}
+a[href^="ed2k://"]{
+	padding-left:16px;
+	background:url(http://bb9z.home.lc/EIS/link/ed2k.png) no-repeat left;
+}
+/* 某个懒惰的百度员工竟然把lang给过滤了 */
+a[mylang|="en"]:after{	content:" " url("http://files.myopera.com/BB9z/EIS/countryflag/en-us.png");}
+a[mylang="en-uk"]:after{	content:" " url("http://files.myopera.com/BB9z/EIS/countryflag/en-uk.png");}
+a[mylang|="zh"]:after{	content:" " url("http://files.myopera.com/BB9z/EIS/countryflag/zh-cn.png");}
+a[mylang="zh-tw"]:after{	content:" " url("http://files.myopera.com/BB9z/EIS/countryflag/zh-tw.png");}
+
+abbr{
+	cursor:help;
+	text-decoration:underline;
+}
+
+div[title]{
+	cursor:help;
+}
+span[title]{
+	cursor:help;
+	border-bottom:dashed 1px #444;
+}
+
+
+/* for feed - 仅订阅用户可见*/
+.ffd{display:none;}
+/* not for feed - 订阅用户不可见*/
+.nffd{display:block!important;visibility:visible!important;}
+.layout-hidden{position:relative;left:-9999em;}
+
+
+/* 文章内自定样式 */
+#m_blog .cnt{
+	overflow:scroll;
+}
+#m_mylink1 br,#m_comment br,#m_blog>br{display:none;}
+.at br,.nr br{
+	display:inline;
+}
+/* 统计信息 */
+	.stic{
+		padding:0.2em 1em;
+		margin:0 -8px;
+		font-size:1em;
+		border-left:solid 2px #09F;
+	}
+	.stic p{
+		margin:0em;
+	}
+	/* Tag */
+	.tag{
+		height:20px;
+		padding:0em 2em;
+		margin:0 -0.7em;
+		background-color:#F60;
+		color:#FFF;
+	}	#blog_text .tag{
+			-moz-border-radius:4px;
+			-webkit-border-radius:4px;
+			border-radius:4px;
+			-moz-box-shadow:1px 2px 3px #aaa;
+			-webkit-box-shadow:1px 2px 3px #aaa;
+			box-shadow:1px 2px 3px #aaa;
+		}
+		.tag h3{
+			margin:0px;
+			font-size:x-small;
+			*font-size:12px!important;
+			font-weight:normal;
+			line-height:21px!important;
+		}
+		.tag img{
+			position:relative;
+			top:3px;
+		}
+		.tag a,.tag a:visited{
+			color:#EEE;
+		}
+		.tag a:hover{ 
+			color:#FFF;
+			font-weight:bold;
+		}
+a.tag-info{
+	background:url("http://bb9z.home.lc/EIS/ui/tag-info.png") no-repeat;
+	display:block;
+	width:30px;
+	float:right;
+}
+a.tag-share{
+	background:url("http://bb9z.home.lc/EIS/ui/tag-share.png") no-repeat;
+	display:block;
+	width:40px;
+	float:right;
+}
+		
+/* 正文 */
+.at,.boxc,.contents,.contentC{
+	font-size:16px;
+	line-height:normal;
+}
+.at_pi1,.at_pi2{
+	font-size:16px;
+}
+.at p{
+	margin:0.4em 0em;
+}
+.at{
+	position:relative;
+	padding:0.5em 1em;
+}
+.at embed{
+	max-width:90%;
+}
+.at a:target{
+	background:rgba(250,220,0,0.5);
+}
+/* 文内样式 */
+div.figure{
+	display:inline-block;
+	max-width:90%;
+	margin:0.5em 1em;
+	padding:10px;
+	border:1px silver solid;
+	-moz-box-shadow:2px 2px 7px #aaa;
+	-webkit-box-shadow:2px 2px 7px #aaa;
+	box-shadow:2px 2px 7px #aaa;
+	text-align:center;
+	font-size:90%;
+	background:#F1F1F1;
+}
+div.figure img{
+	max-width:100%;
+	margin:0;
+	background:url("http://bb9z.home.lc/EIS/ui/load16.png") no-repeat center center;
+}
+div.figure h4{
+	margin:0;
+}
+div.figure p{
+	font-style:italic;
+	text-indent:0;
+	margin:0.2em 0;
+}
+.at img{
+	margin:0.3em;
+	vertical-align:middle;
+}	.at .sdw{
+		-moz-box-shadow:2px 2px 7px #aaa;
+		-webkit-box-shadow:2px 2px 7px #aaa;
+		box-shadow:2px 2px 7px #aaa;
+	}
+	.at .nsdw{
+		-moz-box-shadow:none;
+		-webkit-box-shadow:none;
+		box-shadow:none;
+	}
+.at_comm{
+	font-size:0.8em;
+	color:#666;
+}
+.at_center{
+	text-align:center;
+}
+.at_right{
+	text-align:right;
+}
+.layout-hl	{float:left;margin-left:1em;}
+.layout-hr	{float:right;margin-right:1em;}
+.layout-hc	{margin-left:auto;margin-right:auto;clear:both;text-align:center;}
+.at .FLeft{	float:left;	margin:5px;	margin-right:1.3em;}
+.at .FRight{	float:right;	margin:5px;	margin-left:1.3em;}
+.at img.FLeft{	margin-left:0;}
+.at img.FRight{	margin-right:0;}
+.l2rdm{
+}
+.achk{
+	color:#555;
+	font-size:70%;
+	padding-right:0.5em;
+}
+.at .postil{
+	font-size:80%!important;
+	color:#777;
+	margin:1em;
+}
+.at img.logo{
+  margin:0;
+}
+/* 组件 */
+	/* 组件-目录 */
+.contents{
+	position:relative;
+	float:right;
+	max-width:50%;
+	_width:220px;
+	margin:0.7em;
+	margin-right:0em;
+	z-index:9999;
+	border:1px solid #8cacbb;
+}
+/*.contentC{max-height:400px;overflow-y:auto;}*/
+.contentT{
+	font-size:110%;
+	margin:0;
+	padding:0;
+}
+.contentC ul,.contentC ol{
+	font-size:90%;
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.contents ul ul,.contents ul ol{
+	border-left:2px solid #BBC;
+	margin-left:1em;
+}
+.contents a{display:block;padding:0.2em 1em;}
+.contentC a{padding-left:1em;}
+.contentT a{padding:0.5em 0.7em;}
+.contentT a{background-color:#EEF;color:#004;}
+.contentT a:target{background-color:#224;color:#FFF;}
+.contentC{background-color:#F3F3FD;}
+.contentC a{background-color:#F3F3FD;color:#004;}
+.contentC a:visited{background-color:#E7E7F4;color:#666;}
+.contentC a:hover{background-color:#444;color:#FFF;}
+.contents a{border:none!important;/* For:#m_blog .cnt a */}
+/* END 目录 */
+	/* 目录 */
+div.ui-content{
+	position:relative;
+	float:right;
+	max-width:50%;
+	_width:220px;
+	margin:0.7em;
+	margin-right:0em;
+	z-index:9999;
+	border:1px solid #8cacbb;
+}
+
+h3.ui-content-t{
+	font-size:110%;
+	margin:0;
+	padding:0;
+}
+h3.ui-content-t a{padding:0.5em 0.7em;background-color:#EEF;color:#004;}
+h3.ui-content-t a:target{background-color:#224;color:#FFF;}
+ul.ui-content-c{
+	display:block;
+	margin:0;
+	max-height:300px;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.ui-content li{
+	*height:1em;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	list-style-position:inside;
+}
+.ui-content ul,.ui-content ol{
+	font-size:90%;
+	margin:0;
+	padding:0;
+}
+.ui-content ul ul,.ui-content ul ol{
+	border-left:2px solid #BBC;
+	margin-left:1em;
+	*margin-left:0em;
+}
+.ui-content a{
+	display:block;
+	padding:0;
+}
+.ui-content-c a{
+	padding-left:1em;
+	*padding-left:0em;
+}
+.ui-content-c{background-color:#F3F3FD;}
+.ui-content-c a{background-color:#F3F3FD;color:#004;}
+.ui-content-c a:hover{background-color:#444;color:#FFF;}
+.ui-content a,.ui-content a:visited,.ui-content a:hover,.ui-content a:active{border:none;}
+a.ui-content-b{
+	color:#222;
+	border-bottom:none;
+}
+a.ui-content-b:hover{
+	text-shadow:1px 1px 7px #FC5;
+	*text-decoration:underline;
+}
+h2:target,h3:target,h4:target{
+	background:rgba(250,220,0,0.5);
+}
+a.ui-content-t {
+	font-size:10px;
+}
+/* END 目录 */
+
+
+	/* 组件-相关阅读 */
+.rdmore{
+	margin:0 -0.7em 7px;
+	font-size:14px;
+	padding:1em 3em;
+	background-color:#3BF;
+	clear:both;
+}
+.rdmore ol,.rdmore ul{margin:0;padding:0;}
+.rdmore li{padding-left:1.5em;}
+.rdmore ul{list-style:none;}
+.rdmore h2{
+	margin:0;
+	border:none;
+}
+.rdmore a:target{background-color:#7CF;}
+/* END 相关阅读 */
+	/* 组件-info box */
+.at_box{
+	position:relative;
+	padding-left:55px;
+	background:#F7F7F7 left bottom no-repeat;
+	border:1px #CCC dotted;
+	margin:1em 0em;
+}
+	.boxt{
+		position:absolute;
+		left:5px;
+		width:40px;
+		text-align:center;
+		margin:10px 0;
+		font-size:16px;
+	}
+	.boxc,.bxcode code{
+		background-color:#FFF;
+		max-height:600px;
+		min-height:70px;
+		overflow-y:auto;
+	}
+.bxcode code{margin:-0.3em -0.7em;}
+.bxquto blockquote,.boxc{padding:0.3em 0.7em;}
+.boxc h3,.bxcode pre,.bxquto blockquote{margin:0;}
+.bxquto blockquote{border-right:none;border-top:none;border-bottom:none;}
+.boxt a{border:none!important;}
+.bxinfo	{background-image:url(http://files.myopera.com/BB9z/EIS/mark/info48.png);}
+.bxwarn	{background-image:url(http://files.myopera.com/BB9z/EIS/mark/warning48.png);}
+.bxhelp	{background-image:url(http://files.myopera.com/BB9z/EIS/mark/help48.png);}
+.bxhowto{background-image:url(http://files.myopera.com/BB9z/EIS/mark/howto48.png);}
+.bxtips	{background-image:url(http://files.myopera.com/BB9z/EIS/mark/tips48.png);}
+.bxcode	{background-image:url(http://files.myopera.com/BB9z/EIS/mark/code48.png);}
+.bxquto	{background-image:url(http://files.myopera.com/BB9z/EIS/mark/quto48.png);}
+.bxeg	{background-image:url(http://files.myopera.com/BB9z/EIS/mark/eg48.png);}
+.bxqutoB{color:#888;border-left:2px solid #DDCCCC;margin:0!important;padding:0.3em 1em;background:#FFF;}
+/* END info box */
+.Atb{
+	border:1px solid #666;
+	border-collapse:collapse;
+	border-spacing:0;
+	margin:0.5em;
+}
+.Atb col{
+	border-left:1px solid #ccc;
+}
+.Atb .odd,.Atb tr:nth-child(odd){
+	background-color:#E7F2F9;
+}
+.Atb .firstCol{
+	border-left:none;
+}
+.Atb th{
+	background-color:#82A6B9;
+	text-align:right;
+	font-weight:normal;
+}
+.Atb tr:hover{
+	background-color:#3AC;
+	color:#FFF;
+}
+.Atb th[scope^="col"],.Atb td[scope^="col"]{
+	background:#ccc;
+	border-top:1px solid #a5a5a5;
+	border-bottom:1px solid #a5a5a5;
+	color:#222;
+	text-align:center;
+}
+
+
+
+/* 自定义模块 */
+/* 结构
+	div	.mod	mod_mylink*
+		table	.modth	// box上的模块标题
+		div	.modbox	#m_mylink*	// box主题
+		跟一固定table间隔
+*/
+#mod_mylink1{
+}
+/*{模块ID}
+	#m_blog		文章列表
+	#m_comment	最新评论&留言板
+	
+	#m_filed	文章存档
+	#m_artclg	文章分类
+	#m_rss		RSS模块
+	
+	#m_links	友情链接
+	#m_search	百度搜索
+	
+	#m_album		相册
+	#m_cang		我的搜藏
+	#m_comm_info	其他
+	#m_pro		个人档案
+	#m_track		最近访客
+ */
+/* 评论模块 */
+#m_comment{
+	padding:0px;
+}
+#m_comment .item a{
+	display:block;
+	padding:5px 10px;
+	color:#335;
+}
+#cmtArea{
+	display:block;
+	background-color:#333;
+}
+#m_comment #cmtArea a{
+	color:#FFF;
+}
+#m_comment #cmtArea a:hover{
+	font-weight:bold;
+	color:#ccc;
+}
+#reTitle,td.f14{width:6em;text-align:right;}
+#spBlogCmtText,#spBCmtText{
+	width:100%!important;
+}
+/* 文章存档模块 */
+#m_filed a:active{
+	color:#222;
+}
+/* RSS模块 */
+#m_rss{
+}
+#m_rss a{
+	padding-right:inherit;
+	background-image:none;
+}
+#m_rss table{
+	display:block;
+}
+#m_rss table:nth-child(2n+1){
+	background:#EEE;
+}
+
+#m_rss .dt{
+	background-color:#222;
+	color:#FFF;
+	padding:0.5em 2em;
+	font-size:1em;
+	line-height:1em;
+}
+#m_rss td{
+	padding:0.1em;
+}
+#m_mylink1{
+	text-align:right;
+	padding:10px 2em;
+}
+#m_mylink1 a{
+	float:left;
+	margin-right:2em;
+}
+#m_links .item	{border-bottom:1px solid #DDD;}
+#m_links a		{margin-left:-1em;}
