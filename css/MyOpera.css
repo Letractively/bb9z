@@ -2,7 +2,7 @@
 You can use this free.
 and 悲剧的样式……
 
-更新日志及最新版本可见：http://css.bb9z.googlecode.com/hg/MyOpera.css
+更新日志及最新版本可见：http://bb9z.googlecode.com/hg/css/MyOpera.css
 */
 
 /* Reset
@@ -70,12 +70,12 @@ abbr,acronym{
 
 /* 字体 */
 body,#myo #myo2{
-	font-family:'STHeiti','Hei','XHei','Microsoft YaHei','微软雅黑','文泉驿点阵正黑','文泉驿正黑','WenQuanYi Micro Hei','lucida sans unicode',arial,helvetica,sans-serif;
+	font-family:'Microsoft YaHei','微软雅黑','STHeiti','Hei','XHei','文泉驿点阵正黑','文泉驿正黑','WenQuanYi Micro Hei','lucida sans unicode',arial,helvetica,sans-serif;
 	font-size:14px;
 	color:#DDD;
 }
 h1,h2,h3,h4,h5{
-	font-family:'STHeiti','Hei','XHei','Microsoft YaHei','微软雅黑','文泉驿正黑','WenQuanYi Micro Hei';
+	font-family:'Microsoft YaHei','微软雅黑','STHeiti','Hei','XHei','文泉驿正黑','WenQuanYi Micro Hei';
 	font-weight:bold;
 }
 p + p	{text-indent:2em;}

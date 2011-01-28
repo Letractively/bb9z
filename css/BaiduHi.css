@@ -2,7 +2,7 @@
 You can use this free.
 and 悲剧的样式……
 
-更新日志及最新版本可见：http://css.bb9z.googlecode.com/hg/BaiduHi.css
+更新日志及最新版本可见：http://bb9z.googlecode.com/hg/css/BaiduHi.css
 
 如此多的important……
 */
@@ -18,11 +18,11 @@ div,img,h,p,a,span{
 */
 /* \5fae\8f6f\96c5\9ed1 */
 html body,html td,html div{
-	font-family:'STXihei','Hei','XHei','Microsoft YaHei','微软雅黑','文泉驿点阵正黑','文泉驿正黑','WenQuanYi Micro Hei'!important;/* For All */
+	font-family:'Microsoft YaHei',\5fae\8f6f\96c5\9ed1,'STXihei','Hei','XHei',\u000a\u6587\u6cc9\u9a7f\u70b9\u9635\u6b63\u9ed1,\u5fae\u8f6f\u96c5\u9ed1,'WenQuanYi Micro Hei'!important;/* For All */
 }
 
 #main h1,h2,h3,h4,h5{
-	font-family:'STXihei','Hei','XHei','Microsoft YaHei','微软雅黑','黑体','文泉驿正黑','WenQuanYi Micro Hei'!important;/* For All */
+	font-family:'Microsoft YaHei',\5fae\8f6f\96c5\9ed1,'STXihei','Hei','XHei',\u9ed1\u4f53,\u5fae\u8f6f\u96c5\u9ed1,'WenQuanYi Micro Hei'!important;/* For All */
 	font-weight:bold;
 }
 /* [段落]/大小+间距 */
