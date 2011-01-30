@@ -459,6 +459,31 @@ a.ui-content-t {
 
 /* End 完成的组件 */
 
+/* @mbox 组件-mbox */
+table.mbox{
+	margin:.3em 7%;
+}
+.mbox th{
+	text-align:center;
+	padding:.1em 0 .1em .9em;
+}
+.mbox td{
+	padding:.25em .9em;
+}
+.mbox .nav-n,.mbox .nav-p{
+	white-space:nowrap;
+}
+.mbox .nav-n{border-right:1px dotted #AAAAAA;padding-right:0.5em;}
+.mbox .nav-p{border-left:1px dotted #AAAAAA;padding-left:0.5em;}
+
+.mbox .nav-n a,.mbox .nav-p a{
+	display:block;
+	cursor:pointer;/* 怎么不是链接默认的，hover还没变化？HTML5？ */
+}
+.nav-n a:hover:before	{content:"<";margin-left:-.74em;}
+.nav-p a:hover:after	{content:">";}
+/* End @mbox */
+
 /* End 组件 */
 
 /* @header-fix 顶部MyOpera调整 */
@@ -665,6 +690,7 @@ background:#FAFAFA;font-size:1em;}
 .pagenav b{background:#222;}
 .pagenav a:hover,.pagenav b:hover{font-size:130%;margin:0em -0.1em;background-color:#FFE83F;color:#000;-moz-box-shadow:2px -2px 10px #333;-webkit-box-shadow:2px -2px 10px #333;box-shadow:2px -2px 10px #333;}
 .nxt{width:auto;}
+.pagenav span{float:left;}
 /* End @pagenav */
 /* End @post-inside */
 
