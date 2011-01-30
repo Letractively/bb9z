@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*
 You can use this free.
 and 悲剧的样式……
@@ -29,7 +30,7 @@ input,textarea,select	{*font-size:100%;}
 legend	{color:#000;}
 
 table{color:#222;margin:0.5em 0;}
-th,td{border:1px solid;padding:0.1em 0.7em;}
+th,td{padding:0.1em 0.7em;}
 
 code{
 	display:block;
@@ -456,11 +457,7 @@ a.ui-content-t {
 .bxqutoB{color:#888;border-left:2px solid #DDCCCC;margin:0!important;padding:0.3em 1em;background:#FFF;}
 /* END box */
 
-
 /* End 完成的组件 */
-
-
-
 
 /* End 组件 */
 
