@@ -60,32 +60,32 @@ var _NAME_SPACE_BB_="bb";
 
 
 (function(){
-try{
+//try{
 // 库起始
 
 var bb={};			// 内部的对象
 var bbns=_NAME_SPACE_BB_;	// 输出到外部的名字
-var w=window,
-	d=w.document;	// 使用window下的document，参照 jQuery
+var W=window,
+	D=W.document;	// 使用window下的document，参照 jQuery
 
-if(!w[bbns]){
-	w[bbns]=bb;
+if(!W[bbns]){
+	W[bbns]=bb;
 }
 else{
 	// 已经占用
-	if(w[bbns].version&&w[bbns].defineBy){
+	if(W[bbns].version&&W[bbns].defineBy){
 		// 可能是再次引用
 		// 那么仅提示一下，并返回
-		doutc("bb>Lib"+w[bbns].version+" is defined by: "+w[bbns].defineBy);
-		// 把现有定义输出到_NAME_SPACE_BB_
-		return _NAME_SPACE_BB_=w[bbns];
+		doutc("bb>Lib"+W[bbns].version+" is defined by: "+W[bbns].defineBy);
+		// 结束，把现有定义输出到_NAME_SPACE_BB_
+		return _NAME_SPACE_BB_=W[bbns];
 	}
 	else{
 		// 被其他人占用了，输出到_NAME_SPACE_BB_
 	}
 }
 // 总是将库的内容输出到_NAME_SPACE_BB_
-_NAME_SPACE_BB_=w[bbns];
+_NAME_SPACE_BB_=W[bbns];
 
 bb.pressDate="10:34 2011/1/16"	// 当前版本的发布时间
 bb.version	="0.3.0.0116";		// 当前库的版本
@@ -99,7 +99,7 @@ function fname(){
 
 // #output
 ///////////////* 调试输出 *//////////////////
-bb.debugMode	=true;			// 是否开启调试模式
+bb.debugMode	=true;			// 调试模式开关
 /* 用于调试的输出 - 输出到控制台 
 */	function doutc(str_outputString){
 	if(bb.debugMode==true){
@@ -137,6 +137,7 @@ bb.debugMode	=true;			// 是否开启调试模式
 	if(bool_silentMode) doutc(output);
 	else douta(output);
 }	bb['douto']=douto;
+
 /* 空输出函数，可用替换的方法禁用/恢复指定代码区域的调试输出 */
 function _doutc(){
 }	bb['_doutc']=_doutc;
@@ -249,7 +250,7 @@ bool */	function addEvent(node,type,listener){
 	//	IE方法
 		node['e'+type+listener]=listener;
 		node[type+listener]=function(){
-			node['e'+type+listener](w.event);
+			node['e'+type+listener](W.event);
 		}
 		node.attachEvent('on'+type, node[type+listener]);
 		return true;
@@ -293,13 +294,13 @@ if (document.addEventListener) {
 */
 // 注册onDomReadyHandel
 var onDomReadyHandel=[];	// 保存body完全载入后执行的函数句柄
-if(isFunction(d.onreadystatechange)){
-	setOnDomReady(d.onreadystatechange);
+if(isFunction(D.onreadystatechange)){
+	setOnDomReady(D.onreadystatechange);
 }
-d.onreadystatechange=function(event){
+D.onreadystatechange=function(event){
 	for(var i=0,length=onDomReadyHandel.length;i<length;i++){
 		onDomReadyHandel[i](event);
-		d.onreadystatechange=[];	// IE会执行两次？
+		D.onreadystatechange=[];	// IE会执行两次？
 	}
 }
 /* 
@@ -329,8 +330,8 @@ IntervalHandel=setInterval(_BonDomReady,DOMRETRYTIMES); */
 
 // 注册onLoadHandel
 var onLoadHandel=[];		// 保存页面载入后执行函数的句柄
-if(typeof(w.onload)=='function'){
-	bb.onLoadHandel.unshift(w.onload);
+if(typeof(W.onload)=='function'){
+	bb.onLoadHandel.unshift(W.onload);
 }
 function _BonLoad(event){
 	for(var i=0,length=onLoadHandel.length;i<length;i++){
@@ -338,8 +339,8 @@ function _BonLoad(event){
 	}
 	doutc("bb>_BonLoad end");
 }
-w.onload=_BonLoad;
-//addEvent(w, 'load', _BonLoad);
+W.onload=_BonLoad;
+//addEvent(W, 'load', _BonLoad);
 
 // #dom
 ///////////////* DOM操作 *//////////////////
@@ -366,7 +367,7 @@ bool */	function $(element){
 
 		//	字符串输入假定为ID
 		if (typeof element=='string'){
-			element=d.getElementById(element);
+			element=D.getElementById(element);
 		}
 		if (arguments.length==1) return element;			//	TODO: 可以省略？
 		elements.push(element);
@@ -375,7 +376,7 @@ bool */	function $(element){
 }	bb['$']=$;
 /* 以Class为标识搜寻元素 
 bool */	function getElementByClassName(className, tag, parent){
-	parent=parent || d;
+	parent=parent || D;
 	if (!(parent=$(parent))){return false;}
 
 	var allTags=(tag=="*" && parent.all)?parent.all : parent.getElementsByTagName(tag);
@@ -493,7 +494,7 @@ bb.string={};
 @test-env:wait
 @test-uc:pass
 bool */	function isEmail(str){
-	return /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w{2,3}$/.test(str);
+	return /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\W{2,3}$/.test(str);
 }	bb['string']['isEmail']=isEmail;
 
 /* 移除字符串首位空格
@@ -523,7 +524,7 @@ UID number */ function guid(){
 		:parseFloat((/(?:IE |fox\/|ome\/|ion\/)(\d+\.\d)/.
 		exec(navigator.userAgent) || [,0])[1]); 
 	var dom={ 
-		ie: !!top.VBArray && Math.max(d.documentMode||0, ver),//内核trident 
+		ie: !!top.VBArray && Math.max(D.documentMode||0, ver),//内核trident 
 		firefox: !!top.crypto && ver,// 内核Gecko 
 		opera:  !!top.opera && ver,// 内核 Presto 9.5为Kestrel 10为Carakan 
 		chrome: !!(top.google && top.chrome ) &&  ver ,// 内核V8 
@@ -537,7 +538,7 @@ UID number */ function guid(){
 
 /* 载入指定脚本
 */	function loadScript(url, callback){
-	var script=d.createElement("script");
+	var script=D.createElement("script");
 	script.type="text/javascript";
 
 	if (script.readyState){	//IE
@@ -555,7 +556,7 @@ UID number */ function guid(){
 	}
 
 	script.src = url;
-	d.getElementsByTagName("head")[0].appendChild(script);
+	D.getElementsByTagName("head")[0].appendChild(script);
 }
 // via nczonline.net/blog/2009/07/28/the-best-way-to-load-external-javascript/ by Nicholas C. Zakas
 
@@ -564,9 +565,9 @@ UID number */ function guid(){
 @test-env:skip
 XMLHttpRequest Object */ function getXmlHttpRequest(){
 	var XHR;
-	if(w.XMLHttpRequest)
+	if(W.XMLHttpRequest)
 		XHR=new XMLHttpRequest();
-	else if(w.ActiveXObject)
+	else if(W.ActiveXObject)
 		XHR=new ActiveXObject('Microsoft.XMLHTTP');
 	return XHR;
 }	bb['getXmlHttpRequest']=getXmlHttpRequest;
@@ -587,9 +588,9 @@ XMLHttpRequest Object */ function getXmlHttpRequest(){
 	prefixString=prefixString	||"mk";
 	contAnchor=contAnchor		||"content";
 
-	var topNode=d.getElementById('ui-AutoContents');	// 目录根节点
+	var topNode=D.getElementById('ui-AutoContents');	// 目录根节点
 	if(!topNode) return false;
-	var ctNode=d.createElement('ul');	// 目录容器
+	var ctNode=D.createElement('ul');	// 目录容器
 	ctNode.className='ui-content-c';
 	var cNum=new Array(findInArray.length);	// 计数数组
 	for(var i=cNum.length-1;i>=0;i--) cNum[i]=0;
@@ -597,7 +598,7 @@ XMLHttpRequest Object */ function getXmlHttpRequest(){
 	topNode.innerHTML='<h3 class="ui-content-t" title="善用目录可以节约您的时间"><a name="'+contAnchor+'">目录</a></h3>';
 	topNode.id='ui-content';
 
-	traverse($(inWhere)||d.body);
+	traverse($(inWhere)||D.body);
 	// 返回根部并把生成的目录加入DOM中
 	while(ctNode.parentNode) ctNode=ctNode.parentNode;
 	topNode.appendChild(ctNode);
@@ -621,7 +622,7 @@ XMLHttpRequest Object */ function getXmlHttpRequest(){
 					// 深入里层
 					ctNode=ctNode.children[ctNode.children.length-1];
 					for(var k=ctFindIndex-lastFindIndex;k>0;k--){
-						ctNode.appendChild(d.createElement('ul'));
+						ctNode.appendChild(D.createElement('ul'));
 						ctNodepp=ctNode.getElementsByTagName('ul')[0];
 					}
 				}
@@ -637,7 +638,7 @@ XMLHttpRequest Object */ function getXmlHttpRequest(){
 				}
 
 				// 插入元素
-				var nodeli=d.createElement('li');
+				var nodeli=D.createElement('li');
 				if(cvNode.textContent){
 					nodeli.innerHTML="<a href='#"+hashstr+"'>"+cvNode.textContent+"</a>"
 				}
@@ -645,7 +646,7 @@ XMLHttpRequest Object */ function getXmlHttpRequest(){
 					nodeli.innerHTML="<a href='#"+hashstr+"'>"+cvNode.outerText+"</a>"
 				}
 				ctNode.appendChild(nodeli);
-				var nodeA=d.createElement('span');
+				var nodeA=D.createElement('span');
 				nodeA.innerHTML=' <a href="#" class="ui-content-t" title="点击返回顶部">[TOP]</a>';
 				cvNode.innerHTML='<a href="#'+contAnchor+'" name="'+hashstr+'" class="ui-content-bb" title="点击返回目录">'+cvNode.innerHTML+'</a>'
 				cvNode.appendChild(nodeA);
@@ -674,19 +675,19 @@ function test(){
 }	bb['test']=test;
 
 bb.xyz={};
-bb.xyz.w={
-	screenX		:w.screenX,
-	screenY		:w.screenY,
-	screenLeft	:w.screenLeft,
-	screenTop	:w.screenTop,
-	innerWidth	:w.innerWidth,
-	innerHeight	:w.innerHeight,
-	outerWidrh	:w.outerWidth,
-	outerHeight	:w.outerHeight,
-	scrollX		:w.scrollX,
-	scrollY		:w.scrollY,
-	pageXOffset	:w.pageXOffset,
-	pageYOffset	:w.pageYOffset
+bb.xyz.W={
+	screenX		:W.screenX,
+	screenY		:W.screenY,
+	screenLeft	:W.screenLeft,
+	screenTop	:W.screenTop,
+	innerWidth	:W.innerWidth,
+	innerHeight	:W.innerHeight,
+	outerWidrh	:W.outerWidth,
+	outerHeight	:W.outerHeight,
+	scrollX		:W.scrollX,
+	scrollY		:W.scrollY,
+	pageXOffset	:W.pageXOffset,
+	pageYOffset	:W.pageYOffset
 }
 bb.xyz.get=function(element){
 	e=$(element)
@@ -697,5 +698,5 @@ bb.xyz.get=function(element){
 
 doutc("end of define bb.js");
 // 库结尾
-}catch(e){alert("bb>库初始化遇到问题：\n"+e)}
+//}catch(e){alert("bb>库初始化遇到问题：\n"+e)}
 })()	// 一个自执行匿名函数
