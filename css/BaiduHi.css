@@ -16,11 +16,10 @@ div,img,h,p,a,span{
 	定义于space.css TD,DIV,Html Body Center
 	默认大小12px,行高normal
 */
-/* \5fae\8f6f\96c5\9ed1 */
+
 html body,html td,html div{
 	font-family:'Microsoft YaHei',\5fae\8f6f\96c5\9ed1,'STXihei','Hei','XHei',\u000a\u6587\u6cc9\u9a7f\u70b9\u9635\u6b63\u9ed1,\u5fae\u8f6f\u96c5\u9ed1,'WenQuanYi Micro Hei'!important;/* For All */
 }
-
 #main h1,h2,h3,h4,h5{
 	font-family:'Microsoft YaHei',\5fae\8f6f\96c5\9ed1,'STXihei','Hei','XHei',\u9ed1\u4f53,\u5fae\u8f6f\u96c5\u9ed1,'WenQuanYi Micro Hei'!important;/* For All */
 	font-weight:bold;
@@ -796,6 +795,33 @@ a.ui-content-t {
 .bxeg	{background-image:url(http://files.myopera.com/BB9z/EIS/mark/eg48.png);}
 .bxqutoB{color:#888;border-left:2px solid #DDCCCC;margin:0!important;padding:0.3em 1em;background:#FFF;}
 /* END info box */
+
+/* @mbox 组件-mbox */
+table.mbox{
+	margin:.3em 7%;
+}
+.mbox th{
+	text-align:center;
+	padding:.1em 0 .1em .9em;
+}
+.mbox td{
+	padding:.25em .9em;
+}
+.mbox .nav-n,.mbox .nav-p{
+	white-space:nowrap;
+}
+.mbox .nav-n{border-right:1px dotted #AAAAAA;padding-right:0.5em;}
+.mbox .nav-p{border-left:1px dotted #AAAAAA;padding-left:0.5em;}
+
+.mbox .nav-n a,.mbox .nav-p a{
+	display:block;
+	cursor:pointer;/* 怎么不是链接默认的，hover还没变化？HTML5？ */
+}
+.nav-n a:hover:before	{content:"<";margin-left:-.75em;}
+.nav-p a:hover:after	{content:">";margin-right:-.75em;}
+/* End @mbox */
+
+
 .Atb{
 	border:1px solid #666;
 	border-collapse:collapse;
@@ -837,25 +863,18 @@ a.ui-content-t {
 		div	.modbox	#m_mylink*	// box主题
 		跟一固定table间隔
 */
-#mod_mylink1{
+#m_mylink1{
+	text-align:right;
+	padding:10px 2em;
 }
-/*{模块ID}
-	#m_blog		文章列表
-	#m_comment	最新评论&留言板
-	
-	#m_filed	文章存档
-	#m_artclg	文章分类
-	#m_rss		RSS模块
-	
-	#m_links	友情链接
-	#m_search	百度搜索
-	
-	#m_album		相册
-	#m_cang		我的搜藏
-	#m_comm_info	其他
-	#m_pro		个人档案
-	#m_track		最近访客
- */
+#m_mylink1 a{
+	float:left;
+	margin-right:2em;
+}
+#m_links .item	{border-bottom:1px solid #DDD;}
+#m_links a		{margin-left:-1em;}
+
+
 /* 评论模块 */
 #m_comment{
 	padding:0px;
@@ -885,18 +904,13 @@ a.ui-content-t {
 	color:#222;
 }
 /* RSS模块 */
-#m_rss{
-}
+#m_rss{}
 #m_rss a{
 	padding-right:inherit;
 	background-image:none;
 }
-#m_rss table{
-	display:block;
-}
-#m_rss table:nth-child(2n+1){
-	background:#EEE;
-}
+#m_rss table{display:block;}
+#m_rss table:nth-child(2n+1){background:#EEE;}
 
 #m_rss .dt{
 	background-color:#222;
@@ -905,16 +919,4 @@ a.ui-content-t {
 	font-size:1em;
 	line-height:1em;
 }
-#m_rss td{
-	padding:0.1em;
-}
-#m_mylink1{
-	text-align:right;
-	padding:10px 2em;
-}
-#m_mylink1 a{
-	float:left;
-	margin-right:2em;
-}
-#m_links .item	{border-bottom:1px solid #DDD;}
-#m_links a		{margin-left:-1em;}
+#m_rss td{padding:0.1em;}
