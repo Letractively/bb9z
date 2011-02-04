@@ -851,10 +851,15 @@ div.addcomment{float:none;margin-left:80px;width:auto;}
 /* End @otherpage */
 
 /* @egg~ */
-.blogfront #firstpost.stickypost {
-	position:absolute;
-	top:-999em;
-	width:100%;
+.blogfront #firstpost.stickypost,
+.blogfront #firstpost.stickypost .sticky,
+.blogfront #firstpost.stickypost .title,
+.blogfront #firstpost.stickypost .postdate,
+.blogfront #firstpost.stickypost .postinfo{
+	display:none;
+}
+.egg{
+	display:none;
 }
 /* End @egg~ */
 
