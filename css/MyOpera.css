@@ -61,12 +61,30 @@ code{
 div[title]{
 	cursor:help;
 }
-span[title]{
+abbr,acronym,span[title]{
 	cursor:help;
-	border-bottom:dashed 1px #444;
+	border-bottom:dotted 1px #444;
 }
-abbr,acronym{
-	text-decoration:underline;
+abbr:hover:after,
+acronym:hover:after,
+span[title]:hover:after{
+	content:attr(title);
+	cursor:help;
+
+	position:fixed;
+	z-index:9999;
+	top:0;
+	left:0;
+	min-width:100px;
+	max-width:80%;
+	padding:.25em .5em;
+	font-size:120%;
+	background:rgba(0,0,0,.8);
+	color:#FFF;
+	-o-border-border-radius-bottomright:7px;
+	-webkit-border-radius-bottomright:7px;
+	 -moz-border-radius-bottomright:7px;
+	border-bottom-right-radius:7px;
 }
 
 /* 字体 */
@@ -457,8 +475,6 @@ a.ui-content-t {
 .bxqutoB{color:#888;border-left:2px solid #DDCCCC;margin:0!important;padding:0.3em 1em;background:#FFF;}
 /* END box */
 
-/* End 完成的组件 */
-
 /* @mbox 组件-mbox */
 table.mbox{
 	margin:.3em 7%;
@@ -481,8 +497,12 @@ table.mbox{
 	cursor:pointer;/* 怎么不是链接默认的，hover还没变化？HTML5？ */
 }
 .nav-n a:hover:before	{content:"<";margin-left:-.74em;}
-.nav-p a:hover:after	{content:">";}
+.nav-p a:hover:after	{content:">";margin-right:-.74em;}
 /* End @mbox */
+
+/* End 完成的组件 */
+
+
 
 /* End 组件 */
 
@@ -851,7 +871,6 @@ div.addcomment{float:none;margin-left:80px;width:auto;}
 /* End @otherpage */
 
 /* @egg~ */
-.blogfront #firstpost.stickypost,
 .blogfront #firstpost.stickypost .sticky,
 .blogfront #firstpost.stickypost .title,
 .blogfront #firstpost.stickypost .postdate,
@@ -859,7 +878,7 @@ div.addcomment{float:none;margin-left:80px;width:auto;}
 	display:none;
 }
 .egg{
-	display:none;
+
 }
 /* End @egg~ */
 

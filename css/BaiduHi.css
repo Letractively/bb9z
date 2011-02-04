@@ -128,9 +128,9 @@ th,td{
 	{ main }{ header }
 	div	.stage	// 导航下面的都有了
 		table	#layout	// 主体，较上层少了上边一条缝
-			td	.c2t1	
+			td	.c2t1
 			td	.c2t2	// 栏中间的分隔
-			td	.c2t3	
+			td	.c2t3
 */
 .userbar{
 	overflow:hidden;
@@ -274,7 +274,7 @@ span.modtit{
 	-webkit-border-radius:5px;
 	border-radius:5px;
 	z-index:501;
-	
+
 }
 .modth{		/* 模块标题 */
 	background-color:transparent;
@@ -341,7 +341,7 @@ span.modtit{
 	position:relative;
 	overflow:visible!important;
 }
-#m_blog .more{ /* Read Full*/ 
+#m_blog .more{ /* Read Full*/
 	top:15px;
 	padding-left:10px;
 	font-size:16px;
@@ -404,7 +404,7 @@ span.modtit{
 #in_comment table:nth-child(2n+1){
 	background-color:#EEF;
 }
-/* 辅助功能 */
+
 a[href^="http:"]{
 	padding-right:17px;
 	background:url(http://bb9z.home.lc/EIS/link/external.png) no-repeat right center;
@@ -452,19 +452,35 @@ a[mylang="en-uk"]:after{	content:" " url("http://files.myopera.com/BB9z/EIS/coun
 a[mylang|="zh"]:after{	content:" " url("http://files.myopera.com/BB9z/EIS/countryflag/zh-cn.png");}
 a[mylang="zh-tw"]:after{	content:" " url("http://files.myopera.com/BB9z/EIS/countryflag/zh-tw.png");}
 
-abbr{
-	cursor:help;
-	text-decoration:underline;
-}
-
+/* 辅助功能 */
 div[title]{
 	cursor:help;
 }
-span[title]{
+abbr,acronym,span[title]{
 	cursor:help;
-	border-bottom:dashed 1px #444;
+	border-bottom:dotted 1px #444;
 }
+abbr:hover:after,
+acronym:hover:after,
+span[title]:hover:after{
+	content:attr(title);
+	cursor:help;
 
+	position:fixed;
+	z-index:9999;
+	top:0;
+	left:0;
+	min-width:100px;
+	max-width:80%;
+	padding:.25em .5em;
+	font-size:120%;
+	background:rgba(0,0,0,.8);
+	color:#FFF;
+	-o-border-border-radius-bottomright:7px;
+	-webkit-border-radius-bottomright:7px;
+	 -moz-border-radius-bottomright:7px;
+	border-bottom-right-radius:7px;
+}
 
 /* for feed - 仅订阅用户可见*/
 .ffd{display:none;}
@@ -520,7 +536,7 @@ span[title]{
 		.tag a,.tag a:visited{
 			color:#EEE;
 		}
-		.tag a:hover{ 
+		.tag a:hover{
 			color:#FFF;
 			font-weight:bold;
 		}
@@ -536,7 +552,7 @@ a.tag-share{
 	width:40px;
 	float:right;
 }
-		
+
 /* 正文 */
 .at,.boxc,.contents,.contentC{
 	font-size:16px;
