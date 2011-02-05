@@ -16,12 +16,12 @@ div,img,h,p,a,span{
 	定义于space.css TD,DIV,Html Body Center
 	默认大小12px,行高normal
 */
-
 html body,html td,html div{
-	font-family:'Microsoft YaHei',\5fae\8f6f\96c5\9ed1,'STXihei','Hei','XHei',\u000a\u6587\u6cc9\u9a7f\u70b9\u9635\u6b63\u9ed1,\u5fae\u8f6f\u96c5\u9ed1,'WenQuanYi Micro Hei'!important;/* For All */
+	font-family:'Microsoft YaHei','微软雅黑','STXihei','Hei','XHei','文泉驿点阵正黑','文泉驿正黑','WenQuanYi Micro Hei'!important;/* For All */
 }
+
 #main h1,h2,h3,h4,h5{
-	font-family:'Microsoft YaHei',\5fae\8f6f\96c5\9ed1,'STXihei','Hei','XHei',\u9ed1\u4f53,\u5fae\u8f6f\u96c5\u9ed1,'WenQuanYi Micro Hei'!important;/* For All */
+	font-family:'Microsoft YaHei','微软雅黑','STXihei','Hei','XHei','黑体','文泉驿正黑','WenQuanYi Micro Hei'!important;/* For All */
 	font-weight:bold;
 }
 /* [段落]/大小+间距 */
@@ -835,6 +835,8 @@ table.mbox{
 }
 .nav-n a:hover:before	{content:"<";margin-left:-.75em;}
 .nav-p a:hover:after	{content:">";margin-right:-.75em;}
+#m_blog table.mbox {width:auto;}
+.stage #m_blog table.mbox {table-layout:fixed!important;}
 /* End @mbox */
 
 
