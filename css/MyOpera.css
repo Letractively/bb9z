@@ -880,6 +880,75 @@ div.addcomment{float:none;margin-left:80px;width:auto;}
 .egg{
 
 }
+.egg:target{background:rgba(250,220,0,0.5);}
+/*
+.spp
+	a.ssph
+	.sspc
+
+*/
+.sideshow{
+	height:250px;
+	width:100%;
+	margin:0;
+}
+.sideshow td{
+	vertical-align:top;
+	padding:0;
+}
+.ssp{
+	border:1px solid green;
+	height:250px;
+	padding:0;
+}
+.ssph{
+	display:block;
+	width:40px;
+	background:rgba(50,0,0,.5);
+	float:left;
+	height:100%;
+}
+.ssp:target,.sideshow .ssp:last-child{
+	width:100%;
+	background:#FEE;
+}
+.sideshow:hover .ssp{
+	background:#EEE;
+	width:auto;
+}
+.sideshow:hover .ssp:hover{
+	width:100%;
+}
+.sspc{
+	display:none;
+	background:#FFF;
+	height:100%;
+}
+
+.ssp:target .sspc	{display:block;}
+.ssp:hover .sspc	{display:block;}
+.sideshow:hover .ssp:not(hover) .sspc	{display:none;}
+.sideshow:hover .ssp:hover .sspc	{display:block;}
+
+/* IE9以下 */
+.ie8 .sspc{
+	display:block;
+	height:100%;
+	position:relative;
+}
+.ie8 .ssph{
+	cursor:default;
+	position:absolute;
+	left:100%;
+}
+.ssphi{
+	background:blue;
+	display:block;
+}
+.ienav{
+	width:40px;
+}
+
 /* End @egg~ */
 
 @media print{
