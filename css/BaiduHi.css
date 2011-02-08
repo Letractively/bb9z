@@ -938,3 +938,85 @@ table.mbox{
 	line-height:1em;
 }
 #m_rss td{padding:0.1em;}
+
+
+/* mod: about me */
+/* @egg~ */
+.egg{
+
+}
+.egg:target{background:rgba(250,220,0,0.5);}
+
+.sideshow{
+	margin:0;
+	background:url("http://bb9z.googlecode.com/hg/blog/resource/ss/bg.jpg") no-repeat right bottom;
+	width:100%;
+	display:none\9;
+}
+.sideshow td{
+	vertical-align:top;
+	padding:0;
+}
+.ssp{
+	height:248px;
+	padding:0;
+	border:1px solid #888;
+	opacity:.9
+}
+.ssph{
+	display:block;
+	width:40px;
+	height:100%;
+	float:left;
+	background:#AAA bottom no-repeat;
+	color:#DDD;
+	text-indent:-9999em;
+}
+.ssph.nav1{background-image:url(http://bb9z.googlecode.com/hg/blog/resource/ss/nav1.png);}
+.ssph.nav2{background-image:url(http://bb9z.googlecode.com/hg/blog/resource/ss/nav2.png);}
+.ssph.nav3{background-image:url(http://bb9z.googlecode.com/hg/blog/resource/ss/nav3.png);}
+.ssph.nav1:hover{background-image:url(http://bb9z.googlecode.com/hg/blog/resource/ss/nav1-t.png);}
+.ssph.nav2:hover{background-image:url(http://bb9z.googlecode.com/hg/blog/resource/ss/nav2-t.png);}
+.ssph.nav3:hover{background-image:url(http://bb9z.googlecode.com/hg/blog/resource/ss/nav3-t.png);}
+.ssph:hover,.ssph:target{background-color:#555;color:#FFF;}
+.ssph:visited{color:#DDD;}
+
+.ssp:target,.sideshow .ssp:last-child{width:100%;}
+.sideshow:hover .ssp		{width:auto;}
+.sideshow:hover .ssp:hover{width:100%;}
+
+.sspc{
+	display:none;
+	height:100%;
+	background:#FFF;
+}
+.ssp:target .sspc	{display:block;}
+.ssp:hover .sspc	{display:block;}
+.sideshow:hover .ssp:not(hover) .sspc	{display:none;}
+.sideshow:hover .ssp:hover .sspc		{display:block;}
+
+/* IE9以下 */
+.sideshowi{
+	display:none;display:block\9;
+}
+.ienav{
+	height:250px;
+	background:#555;
+	float:left;
+	_margin-right:-3px;
+}
+.ssphi{
+	display:block;
+	padding:.3em .5em;
+}
+.ienav a:link{color:#DDD;}
+.ienav a:hover{color:#FFF;background:#AAA;}
+.sspci{
+	height:248px;
+	overflow:hidden;
+	border:1px solid #888;
+}
+.sspci .sspc{display:block;}
+/* End @egg~ */
+
+/* END: mod: about me */
