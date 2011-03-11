@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="author" content="BB9z@live.com">
+<meta name="description" content="CSS练习的示例文件——纯CSS定高宽度自适应水平折叠（Horizontal Accordion）组件（带默认内容块）">
+<meta name="keywords" content="CSS, Horizontal, Accordion, table, 宽度自适应">
+<title>PART2: Horizontal Accordion 组件（带默认内容块）</title>
+<link rel="stylesheet" type="text/css" href="../demo-basic.css">
+<style type="text/css"><!--
+
+.accordion-h {
+	border:1px solid #888;
+	border-left:0;
+	position:relative;
+}
+
+table.ha-t {
+	table-layout:auto;
+}
+table.ha-t td {
+	vertical-align:top;
+}
+
+.ha-p {
+	height:248px;
+	border-left:1px solid #888;
+}
+.ha-h {
+	display:block;
+	width:40px;
+	height:100%;
+	float:left;
+}
+.ha-c {
+	height:100%;
+	background:#FFF;
+	overflow:auto;
+}
+
+.ha-h						{background:#AAA;color:#DDD;}
+.ha-p:target .ha-h			{background-color:#555;color:#FFF;}
+.accordion-h:hover .ha-h	{background:#AAA;color:#DDD;}
+.ha-p .ha-h:hover			{background-color:#555;color:#FFF;}
+
+.ha-p:target					{width:100%;}
+.accordion-h:hover .ha-p		{width:auto;}
+.accordion-h:hover .ha-p:hover	{width:100%;}
+
+.ha-c				{display:none;}
+.ha-p:target .ha-c	{display:block;}
+.accordion-h:hover .ha-p .ha-c			{display:none;}		/* 为了覆盖 .ha-p:target .ha-c */
+.accordion-h:hover .ha-p:hover .ha-c	{display:block;}	/* :hover拥有最高优先级 */
+
+.accordion-h .default{
+	position:absolute;
+	top:0;
+	z-index:-1;		/* 不能去掉哦，不信可以试试 */
+	width:100%;
+	height:248px;
+	overflow:hidden;	/* 也是不能去掉的，为了让内容块高度超过100%时不占据 div.layout-fix 填充的左侧 */
+}
+.accordion-h .default .layout-fix{
+	width:123px;	/* 3*40+3 */
+	float:left;
+	height:100%;
+}
+.default .ha-c	{display:block;}	/* 覆盖 .ha-c 默认的 display:none */
+--></style>
+</head>
+<body><div id="main">
+<!-- -->
+
+<div class="accordion-h">
+<!--[if lte IE 6]>
+Hi，在用旧版IE测试？你应该看到下面不工作了。
+<![endif]-->
+<table class="ha-t">
+	<tr>
+		<td class="ha-p" id="ha-p1">
+			<a class="ha-h" href="#ha-p1">p1</a>
+			<div class="ha-c">c1<br>
+			</div>
+		</td>
+		<td class="ha-p" id="ha-p2">
+			<a class="ha-h" href="#ha-p2">p2</a>
+			<div class="ha-c">c2<br>
+				内容<br>
+				比较<br>
+				多<br>
+				多多<br>
+				多多多<br>
+				多多多多<br>
+				多多多多多<br>
+				多多多多多多<br>
+				多多多多多多多<br>
+				多多多多多多多多<br>
+				多多多多多多多多多<br>
+				多多多多多多多多多多<br>
+				多多多多多多多多多多多<br>
+				多多多多多多多多多多多多<br>
+				的话
+			</div>
+		</td>
+		<td class="ha-p" id="ha-p3">
+			<a class="ha-h" href="#ha-p3">p3</a>
+			<div class="ha-c">c3<br>
+				内容<br>
+				比较<br>
+				长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长loooooooooooooooooooooooooooooooooooooooooooong（好吧，我只想说真的很难遇到那么长的单词）<br>
+				的话
+			</div>
+		</td>
+	</tr>
+</table>
+
+<div class="default">
+	<div class="layout-fix"></div>
+	<div class="ha-c">
+		你现在看到的是默认的内容块<br>
+		<br>
+		内容<br>
+		比较<br>
+		多<br>
+		多多<br>
+		多多多<br>
+		多多多多<br>
+		多多多多多<br>
+		多多多多多多<br>
+		多多多多多多多<br>
+		多多多多多多多多<br>
+		多多多多多多多多多<br>
+		多多多多多多多多多多<br>
+		多多多多多多多多多多多<br>
+		多多多多多多多多多多多多<br>
+		<br>
+		而且<br>
+		<br>
+		比较<br>
+		长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长loooooooooooooooooooooooooooooooooooooooooooong（好吧，我只想说真的很难遇到那么长的单词）<br>
+		的话
+	</div>
+</div>
+</div><!-- END of accordion-h -->
+
+<!-- -->
+<footer>
+	<p>Author: <a href="mailto:BB9z@live.com">BB9z@live.com</a></p>
+	<p>Last modified: <var>12:49 2011/3/11</var></p>
+	<p>Read more: <a href="http://my.opera.com/BB9z/blog/css-horizontal-accordion" hreflang="zh-hans">http://my.opera.com/BB9z/blog/css-horizontal-accordion-1</a></p>
+</footer>
+</div></body>
+</html>
