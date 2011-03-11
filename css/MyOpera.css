@@ -1,5 +1,5 @@
 @charset "utf-8";
-/*
+/*!
 You can use this free.
 and 悲剧的样式……
 
@@ -37,8 +37,8 @@ code{
 	margin:1em;
 	padding:0.7em 1.3em;
 	background-color:#DDE;
-	font-family:"文泉驿等宽正黑","文泉驿Unibit",Courier,Monaco,"新宋体",!important;/* For All */
-	font-size:1em;
+	font-family:"XHei Mono","文泉驿等宽正黑","文泉驿Unibit",Courier,Monaco,"新宋体"!important;/* For All */
+	font-size:.7em;
 	border-left:solid #9B9 2px;
 }
 #mainwrap blockquote{
@@ -504,9 +504,53 @@ table.mbox{
 .nav-p a:hover:after	{content:">";margin-right:-.74em;}
 /* End @mbox */
 
+/* accordion-h */
+.accordion-h {border:1px solid #888;border-left:0;}
+
+table.ha-t {table-layout:auto;}
+table.ha-t td {vertical-align:top;}
+
+.ha-p {height:248px;border-left:1px solid #888;}
+.ha-h {display:block;width:40px;height:100%;float:left;}
+.ha-c {height:100%;background:#FFF;overflow:auto;}
+
+.ha-h					{background:#AAA;color:#DDD;}
+.ha-p:target .ha-h		{background-color:#555;color:#FFF;}
+.accordion-h:hover .ha-h	{background:#AAA;color:#DDD;}
+.ha-p .ha-h:hover		{background-color:#555;color:#FFF;}
+
+.ha-p:target			{width:100%;}
+.accordion-h .ha-p:last-child	{width:100%;}
+.accordion-h:hover .ha-p		{width:auto;}
+.accordion-h:hover .ha-p:hover	{width:100%;}
+
+.ha-c				{display:none;}
+.ha-p:target .ha-c	{display:block;}
+.ha-p:hover .ha-c	{display:block;}
+.accordion-h:hover .ha-p:not(hover) .ha-c	{display:none;}
+.accordion-h:hover .ha-p:hover .ha-c		{display:block;}
+
+.accordion-h {_display:none;}
+/* End accordion-h */
+
 /* End 完成的组件 */
 
+/* @npp-code Style */
+code.html .sc0{font-weight: bold;}
+code.html .sc1{color: #0000FF;}
+code.html .sc3{color: #FF0000;}
+code.html .sc6{font-weight: bold;color: #8000FF;}
+code.html .sc8{}
 
+code.css .sc0{}
+code.css .sc1{color: #0000FF;}
+code.css .sc2{color: #FF0000;}
+code.css .sc3{font-weight: bold;color: #FF8000;}
+code.css .sc5{font-weight: bold;}
+code.css .sc6{font-weight: bold;color: #8080C0;}
+code.css .sc8{font-weight: bold;}
+code.css .sc9{color: #008000;}
+/* END @npp-code */
 
 /* End 组件 */
 
@@ -941,6 +985,7 @@ div.addcomment{float:none;margin-left:80px;width:auto;}
 .sideshow:hover .ssp:hover .sspc		{display:block;}
 
 /* IE9以下 */
+/* Horizontal Accordion or Slider */
 .sideshowi{
 	display:none;display:block\9;
 }

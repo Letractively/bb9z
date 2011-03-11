@@ -1,4 +1,4 @@
-/*
+/*!
 You can use this free.
 and 悲剧的样式……
 
@@ -80,8 +80,8 @@ code{
 	margin:1em;
 	padding:0.7em 1.3em;
 	background-color:#DDE;
-	font-family:"文泉驿等宽正黑","文泉驿Unibit",Courier,Monaco,"新宋体",!important;/* For All */
-	font-size:1em;
+	font-family:"XHei Mono","文泉驿等宽正黑","文泉驿Unibit",Courier,Monaco,"新宋体"!important;/* For All */
+	font-size:.7em;
 	border-left:solid #9B9 2px;
 }
 blockquote{
@@ -839,7 +839,24 @@ table.mbox{
 .stage #m_blog table.mbox {table-layout:fixed!important;}
 /* End @mbox */
 
+/* @npp-code Style */
+code.html .sc0{font-weight: bold;}
+code.html .sc1{color: #0000FF;}
+code.html .sc3{color: #FF0000;}
+code.html .sc6{font-weight: bold;color: #8000FF;}
+code.html .sc8{}
 
+code.css .sc0{}
+code.css .sc1{color: #0000FF;}
+code.css .sc2{color: #FF0000;}
+code.css .sc3{font-weight: bold;color: #FF8000;}
+code.css .sc5{font-weight: bold;}
+code.css .sc6{font-weight: bold;color: #8080C0;}
+code.css .sc8{font-weight: bold;}
+code.css .sc9{color: #008000;}
+/* END @npp-code */
+
+/* END 组件 */
 .Atb{
 	border:1px solid #666;
 	border-collapse:collapse;
@@ -951,7 +968,6 @@ table.mbox{
 	margin:0;
 	background:url("http://bb9z.googlecode.com/hg/blog/resource/ss/bg.jpg") no-repeat right bottom;
 	width:100%;
-	display:none\9;
 }
 .sideshow td{
 	vertical-align:top;
@@ -996,9 +1012,8 @@ table.mbox{
 .sideshow:hover .ssp:hover .sspc		{display:block;}
 
 /* IE9以下 */
-.sideshowi{
-	display:none;display:block\9;
-}
+.sideshow{display:none\0;display:none!ie;}
+.sideshowi{display:none;display:block\9;}
 .ienav{
 	height:250px;
 	background:#555;
