@@ -1,2 +1,0 @@
-解密在： http://autoproxy2pac.appspot.com/
-规则在： http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
