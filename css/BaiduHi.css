@@ -856,6 +856,65 @@ code.css .sc8{font-weight: bold;}
 code.css .sc9{color: #008000;}
 /* END @npp-code */
 
+/* @accordion-h */
+.accordion-h {border:1px solid #888;border-left:0;}
+
+table.ha-t {table-layout:auto;margin:0;}
+table.ha-t td {vertical-align:top;}
+
+.ha-p {height:248px;border-left:1px solid #888;padding:0;}
+.ha-h {display:block;width:40px;height:100%;float:left;text-align:center;}
+.ha-hc{writing-mode:tb-rl\9;-webkit-transform: rotate(90deg);-moz-transform: rotate(90deg);-o-transform: rotate(90deg);transform: rotate(90deg);}
+.ha-c {height:100%;background:#FFF;overflow:auto;}
+
+.ha-p					{width:auto;}
+.ha-p.last				{width:100%;}
+.ha-p:target ~ .last	{width:auto;}
+.ha-p:target			{width:100%;}
+.ha-t:hover .ha-p		{width:auto;}
+.ha-t:hover .ha-p:hover	{width:100%;}
+
+.ha-c							{display:none;}
+.ha-p.last .ha-c				{display:block;}
+.ha-p:target ~ .last .ha-c		{display:none;}
+.ha-p:target .ha-c				{display:block;}
+.ha-t:hover .ha-p .ha-c			{display:none;}
+.ha-t:hover .ha-p:hover .ha-c	{display:block;}
+
+.ha-h						{background:#AAA;color:#DDD;}
+.ha-p.last .ha-h			{background-color:#555;color:#FFF;-o-transition:background-color .3s .1s linear;}
+.ha-p:target ~ .last .ha-h	{background-color:#AAA;color:#DDD;-o-transition:background-color .3s .1s linear;}
+.ha-p:target .ha-h			{background-color:#555;color:#FFF;-o-transition:background-color .3s .1s linear;}
+.ha-t:hover .ha-h			{background-color:#AAA;color:#DDD;-o-transition:background-color .3s .1s linear;}
+.ha-t:hover .ha-p:hover .ha-h	{background-color:#555;color:#FFF;-o-transition:background-color .3s .1s linear;}
+
+.accordion-h {_display:none;}
+/* END @accordion-h */
+
+/* @tabs */
+.tabs{
+	position:relative;
+	height:250px;
+	border:1px solid #888;
+	overflow:hidden;
+}
+.tabs-v{
+	height:100%;
+	background:#555;
+	float:left;
+	_margin-right:-3px;
+}
+.tabs-v a{
+	display:block;
+	padding:.3em .5em;
+}
+.tabs-v a:link{color:#DDD;}
+.tabs-v a:visited{color:#DDD;}
+.tabs-v a:hover{color:#FFF;background:#AAA;}
+.tabs-t{height:100%;overflow:hidden;}
+.tabs-c{height:100%;overflow:auto;}
+/* END @tabs */
+
 /* END 组件 */
 .Atb{
 	border:1px solid #666;
@@ -964,74 +1023,9 @@ code.css .sc9{color: #008000;}
 }
 .egg:target{background:rgba(250,220,0,0.5);}
 
-.sideshow{
-	margin:0;
-	background:url("http://bb9z.googlecode.com/hg/blog/resource/ss/bg.jpg") no-repeat right bottom;
-	width:100%;
-}
-.sideshow td{
-	vertical-align:top;
-	padding:0;
-}
-.ssp{
-	height:248px;
-	padding:0;
-	border:1px solid #888;
-	opacity:.9
-}
-.ssph{
-	display:block;
-	width:40px;
-	height:100%;
-	float:left;
-	background:#AAA bottom no-repeat;
-	color:#DDD;
-	text-indent:-9999em;
-}
-.ssph.nav1{background-image:url(http://bb9z.googlecode.com/hg/blog/resource/ss/nav1.png);}
-.ssph.nav2{background-image:url(http://bb9z.googlecode.com/hg/blog/resource/ss/nav2.png);}
-.ssph.nav3{background-image:url(http://bb9z.googlecode.com/hg/blog/resource/ss/nav3.png);}
-.ssph.nav1:hover{background-image:url(http://bb9z.googlecode.com/hg/blog/resource/ss/nav1-t.png);}
-.ssph.nav2:hover{background-image:url(http://bb9z.googlecode.com/hg/blog/resource/ss/nav2-t.png);}
-.ssph.nav3:hover{background-image:url(http://bb9z.googlecode.com/hg/blog/resource/ss/nav3-t.png);}
-.ssph:hover,.ssph:target{background-color:#555;color:#FFF;}
-.ssph:visited{color:#DDD;}
-
-.ssp:target,.sideshow .ssp:last-child{width:100%;}
-.sideshow:hover .ssp		{width:auto;}
-.sideshow:hover .ssp:hover{width:100%;}
-
-.sspc{
-	display:none;
-	height:100%;
-	background:#FFF;
-}
-.ssp:target .sspc	{display:block;}
-.ssp:hover .sspc	{display:block;}
-.sideshow:hover .ssp:not(hover) .sspc	{display:none;}
-.sideshow:hover .ssp:hover .sspc		{display:block;}
-
-/* IE9以下 */
-.sideshow{display:none\0;display:none!ie;}
-.sideshowi{display:none;display:block\9;}
-.ienav{
-	height:250px;
-	background:#555;
-	float:left;
-	_margin-right:-3px;
-}
-.ssphi{
-	display:block;
-	padding:.3em .5em;
-}
-.ienav a:link{color:#DDD;}
-.ienav a:hover{color:#FFF;background:#AAA;}
-.sspci{
-	height:248px;
-	overflow:hidden;
-	border:1px solid #888;
-}
-.sspci .sspc{display:block;}
+/* ltr IE9 */
+.egg .accordion-h{display:none\0;display:none!ie;}
+.egg .tabs{display:none;display:block\9;}
 /* End @egg~ */
 
 /* END: mod: about me */
