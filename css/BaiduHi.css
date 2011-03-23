@@ -1017,6 +1017,7 @@ table.ha-t td {vertical-align:top;}
 
 
 /* mod: about me */
+#m_aboutme,#m_aboutme td{padding:0;}
 /* @egg~ */
 .egg{
 
@@ -1024,7 +1025,7 @@ table.ha-t td {vertical-align:top;}
 .egg:target{background:rgba(250,220,0,0.5);}
 
 /* ltr IE9 */
-.egg .accordion-h{display:none\0;display:none!ie;}
+.egg .accordion-h{display:none\9;display:none!ie;}
 .egg .tabs{display:none;display:block\9;}
 /* End @egg~ */
 
