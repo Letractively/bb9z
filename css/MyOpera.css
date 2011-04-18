@@ -112,6 +112,7 @@ code p	{text-indent:0;}
 h1	{font-size:1.9em;}
 h2	{font-size:1.7em;margin:0.5em 0 0.1em 0;}
 h3	{font-size:1.5em;margin:1.0em 0 0.3em 0;}
+h2+h3{margin-top:0;}
 h4	{font-size:1.3em;margin:0.7em 0 0.3em 0.5em;}
 h5	{font-size:1.1em;margin:0.5em 0 0.3em 1em;}
 /* 节标题 */
@@ -122,11 +123,11 @@ h5	{font-size:1.1em;margin:0.5em 0 0.3em 1em;}
 /* @a - 处理链接 */
 a			{color:#114;text-decoration:none;}
 a:visited	{color:#777;}
-a:hover	{color:#f90;}
+a:hover,a:focus	{color:#f90;}
 a:active	{color:#ff9;}
 .at a			{border-bottom:1px dashed #114;}
 .at a:visited	{border-bottom-color:#777;}
-.at a:hover	{border-bottom:1px solid #FFE600;}
+.at a:hover,.at a:focus	{border-bottom:1px solid #FFE600;}
 .at a:active	{border-bottom:none;}
 a:target{background:rgba(250,220,0,0.5);}
 /* @a - 链接协议 */
@@ -429,7 +430,8 @@ a.ui-content-b{
 	color:#222;
 	border-bottom:none;
 }
-h2:target,h3:target,h4:target{
+h2:target,h3:target,h4:target,
+h2:focus,h3:focus,h4:focus{
 	background:rgba(250,220,0,0.5);
 }
 a.ui-content-b:hover{
