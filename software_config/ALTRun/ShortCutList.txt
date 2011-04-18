@@ -1,0 +1,137 @@
+F0       |                    |Computer                      |>This Computer                |::{20D04FE0-3AEA-1069-A2D8-08002B30309D}
+F0       |                    |appc                          |>Program Files                |%PROGRAMFILES%
+F21      |                    |env                           |>Environment                  |%env%
+F58      |                    |app                           |>Program Files                |%app%
+F0       |                    |Recent                        |>最近打开文件 目录            |%USERPROFILE%\Recent
+F0       |                    |Windows                       |>Windows                      |%WINDIR%
+F0       |                    |System32                      |>System32                     |%WINDIR%\System32
+F1       |                    |dll                           |>dll                          |%env%\dll
+F19      |                    |tool                          |>Support Kits                 |%env%\tool
+F0       |                    |ncmd                          |>nircmd                       |%env%\tool\nircmd
+F0       |                    |SysinternalsSuite             |>SysinternalsSuite            |%env%\tool\SysinternalsSuite
+
+F1       |                    |d                             |>D:\                          |D:\
+F20      |                    |game                          |>Game Files                   |D:\Game Files
+F9       |                    |gamex                         |>GameExplorer                 |D:\Game Files\[GameExplorer]
+F1       |                    |e                             |>E:\                          |E:\
+F5       |                    |doc,Document                  |>Document                     |E:\Document
+F7       |                    |Front-End                     |>Front-End                    |E:\Document\Front-End
+F0       |                    |video,My Videos               |>My Videos                    |E:\Document\Videos
+F3       |                    |book                          |>Ebook                        |E:\book
+F3       |                    |Desktop                       |>Desktop                      |E:\Desktop
+F24      |                    |dl,Download                   |>Download                     |E:\Downloads
+F5       |                    |Music                         |>Music                        |E:\Music
+F3       |                    |pic,My Pictures               |>My Pictures                  |E:\Picture
+F13      |                    |Soft                          |>SOFT                         |E:\soft
+F3       |                    |Study                         |>Study                        |E:\Study
+F9       |                    |pj,Project                    |>Project                      |E:\Project
+F3       |                    |career,Job                    |>Job                          |E:\Project\Job
+F26      |                    |gc                            |>gc-bb9z                      |E:\Project\gc-bb9z
+F0       |                    |site                          |>Site-BB9z                    |E:\Project\Site-BB9z
+F3       |                    |hit-snn                       |htdocs                        |E:\Project\hit-snn\hg\htdocs
+
+F7       |                    |mmc                           |控制中心                      |D:\Environment\tool\控制中心.msc
+F5       |                    |Procmon                       |Procmon                       |D:\Environment\tool\SysinternalsSuite\Procmon.exe
+F0       |                    |Procexp                       |procexp WOW64                 |D:\Environment\tool\SysinternalsSuite\procexp WOW64.exe
+F4       |                    |Tcpview                       |Tcpview                       |D:\Environment\tool\SysinternalsSuite\Tcpview.exe
+F0       |                    |siw                           |siw                           |D:\Environment\tool\SIW\siw.exe
+F13      |                    |autoruns                      |autoruns                      |D:\Environment\tool\SysinternalsSuite\autoruns.exe
+F2       |                    |cmdp                          |特权启动CMD                   |D:\Environment\tool\cmdp
+
+F21      |                    |cmd                           |Command Prompt                |C:\Windows\SysWOW64\cmd.exe
+F7       |                    |Regedit                       |注册表编辑器                  |regedt32
+F1       |                    |msconfig                      |系统配置                      |msconfig
+F6       |                    |task,jh                       |Task Scheduler                |%windir%\system32\taskschd.msc
+F1       |                    |dev                           |设备管理器                    |devmgmt.msc
+F2       |                    |perfmon                       |Windows资源监视器             |%windir%\system32\perfmon.exe
+F0       |                    |Taskmgr                       |任务管理器                    |taskmgr
+F0       |                    |pReboot                       |立即重启                      |tsshutdn 3 /delay:0 /reboot
+F0       |                    |myip                          |我的IP地址                    |nslookup
+F1       |                    |host                          |host                          |%app%\notepad++\notepad++.exe "D:\Environment\windows\host\hosts"
+
+F1       |                    |HiddenFiles                   |Toggle Hidden Files           |"C:\Windows\System32\WScript.exe" "D:\Environment\tool\desktop-suit\Toggle Hidden Files.vbs"
+F0       |                    |power-low                     |power-low                     |powercfg -s a1841308-3541-4fab-bc81-f71556f20b4a
+F0       |                    |power-normal                  |power-normal                  |powercfg -s 381b4222-f694-41f0-9685-ff5bb260df2e
+F0       |                    |power-high                    |power-high                    |powercfg -s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
+F0       |                    |coffee-on                     |Have coffee                   |SCHTASKS /Run /TN "BB9z\Have coffee"
+F0       |                    |coffee-off                    |No coffee                     |SCHTASKS /Run /TN "BB9z\No coffee"
+
+F0       |                    |AddRemoveProgram              |添加/删除程序                 |appwiz.cpl
+F0       |                    |ControlPanel                  |控制面板                      |control.exe
+F0       |                    |InternetConnection            |Internet控制                  |control.exe Inetcpl.cpl ,4
+F0       |                    |SystemProperty                |系统属性                      |Sysdm.cpl
+F0       |                    |ShutDown                      |立即关机                      |tsshutdn 3 /delay:0
+
+F0       |                    |snip                          |Snipping Tool                 |%windir%\system32\SnippingTool.exe
+F8       |                    |ie                            |IE                            |iexplore.exe
+F1       |                    |mspaint                       |画图                          |mspaint
+
+F1       |                    |VMware Workstation            |VMware Workstation            |C:\Program Files (x86)\VMware\VMware Workstation\vmware.exe
+F5       |                    |Cheat Engine                  |Cheat Engine                  |D:\Game Files\Cheat Engine\Cheat Engine.exe
+F0       |                    |XKey                          |XKey                          |D:\Game Files\金山游侠V\Tools\XKey\XKey.exe
+F6       |                    |Flash Game Master             |Flash Game Master             |D:\Game Files\Flash Game Master\flashGameMaster.exe
+F0       |                    |war3                          |Frozen Throne                 |D:\Game Files\WarIII\Frozen Throne.exe
+F12      |                    |ff,Firefox                    |Firefox                       |D:\Platform\PortableApps\FirefoxPortable\FirefoxPortable.exe
+F0       |                    |QQ                            |WebQQ                         |D:\Environment\Setting\Opera\ALL\WebQQ\WebQQ.exe
+F0       |                    |tm                            |TM2009                        |"D:\Environment\Sandbox\BB9z\DefaultBox\drive\C\Program Files (x86)\Tencent\TM2009\Bin\TM.exe"
+F0       |                    |xp                            |Windows XP Mode               |%SystemRoot%\system32\rundll32.exe %SystemRoot%\system32\VMCPropertyHandler.dll,LaunchDefaultVM
+F1       |                    |io                            |IOGraph                       |%app%\[in]\IOGraph.exe
+F1       |                    |On Screen Ruler               |On Screen Ruler               |%app%\[in]\On Screen Ruler.exe
+F0       |                    |air                           |AIRPLAY                       |%app%\[in]\AIRPLAY.exe
+F0       |                    |ie6                           |Internet Explorer 6           |%app%\[in]\Internet_Explorer.exe
+F2       |                    |JColorPicker                  |JColorPicker                  |%app%\[in]\JColorPicker.exe
+F0       |                    |fup,Flickr Uploadr            |Flickr Uploadr                |%app%\Flickr Uploadr\Flickr Uploadr.exe
+F8       |                    |qDir                          |Q-Dir                         |%app%\Q-Dir\Q-Dir.exe
+F0       |                    |fz filezilla                  |filezilla                     |%app%\FileZilla FTP Client\filezilla.exe
+F3       |                    |color                         |picpick                       |%APP%\picpick\picpick.exe
+F3       |                    |gr,feed                       |FeedDemon                     |%app%\FeedDemon\FeedDemon.exe
+F41      |                    |Thunder,xunlei                |Thunder                       |%app%\Thunder\Program\Thunder.exe
+F11      |                    |ch,ChromePlus                 |ChromePlus                    |%app%\ChromePlus\chrome.exe
+F9       |                    |fb,foobar2000                 |foobar2000                    |%APP%\foobar2000\foobar2000.exe
+F1       |                    |calc,HEXelon                  |HEXelon                       |%app%\HEXelon\hexelon.exe
+F0       |                    |ahk                           |AutoHotkey                    |%app%\AutoHotKey\AutoHotkey.exe
+F0       |                    |DTLite,DAEMON                 |DAEMON Tools Lite             |%app%\DAEMON Tools Lite\DTLite.exe
+F7       |                    |Everything                    |Everything                    |%app%\Everything\Everything-1.2.1.371.exe
+F1       |                    |ftp,flashfxp                  |flashfxp                      |%app%\FlashFXP\flashfxp.exe
+F9       |                    |fg,Freegate                   |Freegate                      |%app%\Freegate\fg709p.exe
+F0       |                    |emule                         |eMule官版                     |%app%\eMule\emule.exe
+F0       |                    |GoldWave                      |GoldWave                      |%app%\GoldWave\GoldWave.exe
+F1       |                    |IcoFX                         |IcoFX                         |%app%\IcoFX\IcoFX.exe
+F0       |                    |MarkMan                       |MarkMan                       |%app%\MarkMan\MarkMan.exe
+F0       |                    |Dorado                        |Dorado                        |%app%\MarkMan\Dorado.exe
+F0       |                    |MassiGra                      |MassiGra                      |%app%\MassiGra040\MassiGra.exe
+F2       |                    |rename,metamorphose           |metamorphose                  |%app%\metamorphose\metamorphose.exe
+F11      |                    |mirc                          |mirc                          |%app%\mIRC\mirc.exe
+F0       |                    |mircdir                       |>mIRC                         |%app%\mIRC
+F3       |                    |Networx                       |Networx                       |%app%\networx\networx.exe
+F1       |                    |font                          |NexusFont                     |%app%\NexusFont2\NexusFont.exe
+F3       |                    |wujie                         |无界                          |%app%\wujie\u1004a.exe
+F0       |                    |Safari                        |Safari                        |%app%\Safari\Safari.exe
+F1       |                    |PaintDotNet                   |PaintDotNet                   |%app%\Paint.NET\PaintDotNet.exe
+F2       |                    |strokeit                      |strokeit                      |%app%\StrokeIt\strokeit.exe
+F1       |                    |timeEdition                   |timeEdition                   |%app%\timeEdition\timeEdition.exe
+F0       |                    |tcm                           |TOTALCMD                      |%app%\Total Commander\TOTALCMD.EXE
+F0       |                    |tc,TrueCrypt                  |TrueCrypt                     |%app%\TrueCrypt\TrueCrypt.exe
+F15      |                    |tw,Tween                      |Tween                         |%app%\Tween\Tween.exe
+F0       |                    |UltraISO                      |UltraISO                      |%app%\UltraISO\UltraISO.exe
+F0       |                    |vBox                          |VirtualBox                    |%app%\VirtualBox\VirtualBox.exe
+F0       |                    |VisiPics                      |VisiPics                      |%app%\VisiPics\VisiPics.exe
+F0       |                    |vlc                           |vlc                           |%app%\VLC\vlc.exe
+F2       |                    |WinHex                        |WinHex                        |%app%\WinHex\WinHex.exe
+F0       |                    |fdm                           |Free Download Manager         |%app%\Free Download Manager\fdm.exe
+F0       |                    |Picasa3                       |Picasa3                       |%app%\Google\Picasa3\Picasa3.exe
+F0       |                    |matlab                        |MATLAB R2010a                 |%app%\MATLAB\R2010a\bin\matlab.exe
+F0       |                    |xchat                         |xchat                         |%app%\X-Chat 2\xchat.exe
+F5       |                    |GOM                           |GOM                           |%app%\GRETECH\GomPlayer\GOM.exe
+F0       |                    |xt                            |Xtreme                        |%app%\Xtreme\eMule.exe
+F0       |                    |PopKiller                     |PopKiller                     |%app%\Ergate PopKiller V1.0\PopKiller.exe
+F0       |                    |dw                            |Adobe Dreamweaver CS4         |%app%\Adobe\Adobe Dreamweaver CS4\Dreamweaver.exe
+F6       |                    |Ps                            |Adobe Photoshop CS5           |%app%\Adobe\Adobe Photoshop CS5 (64 Bit)\Photoshop.exe
+F1       |                    |calc,speedcrunch              |speedcrunch                   |%app%\SpeedCrunch-0.10.1\speedcrunch.exe
+F3       |                    |ico explorer                  |m6explorer                    |%app%\Microangelo\Toolset 6\m6explorer.exe
+F0       |                    |FSViewer,picview              |FSViewer                      |%app%\FSViewer43\FSViewer.exe
+F2       |                    |Todo,wunderlist               |Wunderlist                    |%app%\wunderlist\wunderlist.exe
+F0       |                    |GTD,GeeTeeDee                |GeeTeeDee                     |%app%\GeeTeeDee\GeeTeeDeePortable.exe
+F1       |                    |Sogo                          |SogouExplorer                 |%app%\SogouExplorer\SogouExplorer.exe
+F1       |                    |MySQLWorkbench                |MySQLWorkbench                |%app%\MySQL Workbench 5.2.31 CE\MySQLWorkbench.exe
+F0       |                    |Undelete                      |Undelete                      |%app%\Active UNDELETE7 Enterprise\Undelete.exe
