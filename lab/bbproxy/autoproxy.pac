@@ -23,11 +23,12 @@ function FindProxyForURL(url, host) {
 if(dnsDomainIs(host,".cn")) return D;
 /* END @广谱规则 */
 
-/* @广告&跟踪 */
+/* @广告&跟踪 (此段应该无效) */
 if(dnsDomainIs(host,"google-analytics.com")) return N;
 if(dnsDomainIs(host,"hljdns4.cn")) return N;
 
 /* END @广告&跟踪 */
+
 	//-- AUTO-GENERATED RULES, DO NOT MODIFY!
 	if(/^[\w\-]+:\/+(?!\/)(?:[^\/]+\.)?taitung\-house\.gov\.tw/i.test(url)) return D;
 	if(/^[\w\-]+:\/+(?!\/)(?:[^\/]+\.)?cromotc\.nat\.gov\.tw/i.test(url)) return D;
@@ -2764,7 +2765,19 @@ if(dnsDomainIs(host,"hljdns4.cn")) return N;
 	if(/en\.wikipedia\.org\/wiki\/Tiananmen_Square_protests_of_1989/i.test(url)) return P;
 	if(/en\.wikipedia\.org\/wiki\/Tibetan_independence_movement/i.test(url)) return P;
 	//-- END OF AUTO-GENERATED RULES
-
+	
+	
+	//	bit.ly
+	if(/bit\.ly/i.test(url)) return P;
+	//	forum.iask.ca
+	if(/forum\.iask\.ca/i.test(url)) return P;
+	//	mecsoft.com
+	if(/mecsoft\.com/i.test(url)) return P;
+	//	tinyurl.com
+	if(/tinyurl\.com/i.test(url)) return P;
+	//	w3schools.com
+	if(/w3schools\.com/i.test(url)) return P;
+	
 	// 维基百科中文
 	if(/upload\.wikimedia\.org/i.test(url)) return P;
 	if(/bits\.wikimedia\.org/i.test(url)) return P;
