@@ -203,6 +203,17 @@ a.img_link img:hover{
 #footer-promo,
 #getopera{display:none;}
 
+/* tool */
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+	content:"";
+	display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+
 /* 结构备忘
 #top下
 #content.blogfront	列表
