@@ -2771,12 +2771,18 @@ if(dnsDomainIs(host,"hljdns4.cn")) return N;
 	if(/bit\.ly/i.test(url)) return P;
 	//	forum.iask.ca
 	if(/forum\.iask\.ca/i.test(url)) return P;
+	//	fpdf.org
+	if(/fpdf\.org/i.test(url)) return P;
 	//	mecsoft.com
 	if(/mecsoft\.com/i.test(url)) return P;
 	//	tinyurl.com
 	if(/tinyurl\.com/i.test(url)) return P;
 	//	w3schools.com
 	if(/w3schools\.com/i.test(url)) return P;
+	// wuala
+	if(/content\.wuala\.com/i.test(url)) return P;
+	//	xm1math.net
+	if(/www\.xm1math\.net/i.test(url)) return P;
 	
 	// 维基百科中文
 	if(/upload\.wikimedia\.org/i.test(url)) return P;
