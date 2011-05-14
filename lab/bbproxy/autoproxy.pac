@@ -2793,10 +2793,16 @@ if(dnsDomainIs(host,"hljdns4.cn")) return N;
 	if(/zh\.wikisource\.org/i.test(url)) return P;
 	if(/zh\.wikipedia\.org/i.test(url)) return P;
 	
+/* @特殊情况 */
+// www.vevo.com/watch —— 地址屏蔽
+if(/www\.vevo\.com\/watch/i.test(url)) return P;
+/* @特殊情况 */
+	
 /* @行为检测 */
 // 如果域名不能被解析则使用代理
-// 不适用于ISP的域名劫持
-if(!isResolvable(host)) return P;
+// 不适用于ISP的域名劫持，Windows下推荐使用DnsSpeeder解决劫持问题
+// 默认关闭，移除注释以启用
+// if(!isResolvable(host)) return P;
 
 /* END @行为检测 */
 
