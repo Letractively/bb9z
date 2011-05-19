@@ -4476,21 +4476,17 @@
 								
 								<xsl:choose>
 				   					  <xsl:when test="/b:Bibliography/b:Source[position()=$prevBook]/b:SourceType = 'JournalArticle' or /b:Bibliography/b:Source[position()=$prevBook]/b:SourceType = 'ConferenceProceedings'">
-										  <b>
 				   						  <xsl:copy-of select="$Main"/>
 				   	                      <xsl:call-template name="need_Dot">
 				   	                        <xsl:with-param name="field" select ="$Main"/>
 				   	                      </xsl:call-template>
-										  </b>
 										  <xsl:call-template name="templ_prop_Space"/>
 				   					  </xsl:when>
 				   					  <xsl:when test="b:SourceType = 'JournalArticle' or b:SourceType = 'ConferenceProceedings'">
-										  <b>
 				   						  <xsl:copy-of select="$Main"/>
 				   	                      <xsl:call-template name="need_Dot">
 				   	                        <xsl:with-param name="field" select ="$Main"/>
 				   	                      </xsl:call-template>
-										  </b>
 										  <xsl:call-template name="templ_prop_Space"/>
 				   					  </xsl:when>
 									<xsl:when test="/b:Bibliography/b:Source[position()=$prevBook]/b:Author/b:Main = b:Author/b:Main">
@@ -4501,11 +4497,8 @@
 										</xsl:if>
 									</xsl:when>
 									<xsl:otherwise>
-										<b>
 										<xsl:copy-of select="$MainDot"/>
-										</b>
 										<xsl:call-template name="templ_prop_Space"/>
-										
 									</xsl:otherwise>
 								</xsl:choose>
 
