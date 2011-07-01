@@ -407,27 +407,27 @@ span.modtit{
 
 a[href^="http:"]{
 	padding-right:17px;
-	background:url(http://bb9z.home.lc/EIS/link/external.png) no-repeat right center;
+	background:url(http://bb9z.googlecode.com/hg/blog/resource/link/external.png) no-repeat right center;
 }
 a[href^="https:"]{
 	padding-right:17px;
-	background:url(http://bb9z.home.lc/EIS/link/sl.png) no-repeat right center;
+	background:url(http://bb9z.googlecode.com/hg/blog/resource/link/sl.png) no-repeat right center;
 }
 	a[href*="BB9z"],a[href*="BBservice"],a[href^="http://hi.baidu.com"],a[href$="bb9z"]{
 		padding-right:0;
 		background-image:none;
 	}
 	a[href*="ied2k.com"]{
-		background-image:url(http://bb9z.home.lc/EIS/link/l2ied2k.png);
+		background-image:url(http://bb9z.googlecode.com/hg/blog/resource/link/l2ied2k.png);
 	}
 	a[href*="emulefans.com"]{
-		background-image:url(http://bb9z.home.lc/EIS/link/l2emule-fans.png);
+		background-image:url(http://bb9z.googlecode.com/hg/blog/resource/link/l2emule-fans.png);
 	}
 	a[href*="verycd.com"]{
-		background-image:url(http://bb9z.home.lc/EIS/link/l2verycd.png);
+		background-image:url(http://bb9z.googlecode.com/hg/blog/resource/link/l2verycd.png);
 	}
 	a[href*="wikipedia.org"]{
-		background-image:url(http://bb9z.home.lc/EIS/link/l2wikipedia.png);
+		background-image:url(http://bb9z.googlecode.com/hg/blog/resource/link/l2wikipedia.png);
 	}
 .at .l2wakoopa{
 	border:none;
@@ -440,11 +440,11 @@ a[href^="https:"]{
 }
 a[href^="mailto:"]{
 	padding-left:16px;
-	background:url(http://bb9z.home.lc/EIS/link/mail.png) no-repeat left;
+	background:url(http://bb9z.googlecode.com/hg/blog/resource/link/mail.png) no-repeat left;
 }
 a[href^="ed2k://"]{
 	padding-left:16px;
-	background:url(http://bb9z.home.lc/EIS/link/ed2k.png) no-repeat left;
+	background:url(http://bb9z.googlecode.com/hg/blog/resource/link/ed2k.png) no-repeat left;
 }
 /* 某个懒惰的百度员工竟然把lang给过滤了 */
 a[mylang|="en"]:after{	content:" " url("http://files.myopera.com/BB9z/EIS/countryflag/en-us.png");}
@@ -541,13 +541,13 @@ span[title]:hover:after{
 			font-weight:bold;
 		}
 a.tag-info{
-	background:url("http://bb9z.home.lc/EIS/ui/tag-info.png") no-repeat;
+	background:url("http://bb9z.googlecode.com/hg/blog/resource/ui/tag-info.png") no-repeat;
 	display:block;
 	width:30px;
 	float:right;
 }
 a.tag-share{
-	background:url("http://bb9z.home.lc/EIS/ui/tag-share.png") no-repeat;
+	background:url("http://bb9z.googlecode.com/hg/blog/resource/ui/tag-share.png") no-repeat;
 	display:block;
 	width:40px;
 	float:right;
@@ -591,7 +591,7 @@ div.figure{
 div.figure img{
 	max-width:100%;
 	margin:0;
-	background:url("http://bb9z.home.lc/EIS/ui/load16.png") no-repeat center center;
+	background:url("http://bb9z.googlecode.com/hg/blog/resource/ui/load16.png") no-repeat center center;
 }
 div.figure h4{
 	margin:0;

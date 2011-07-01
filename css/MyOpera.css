@@ -132,23 +132,23 @@ a:active	{color:#ff9;}
 a:target{background:rgba(250,220,0,0.5);}
 /* @a - 链接协议 */
 a[href^="http"]		{padding-right:17px;
-	background:url("http://bb9z.home.lc/EIS/link/external.png") no-repeat right center;
+	background:url("http://bb9z.googlecode.com/hg/blog/resource/link/external.png") no-repeat right center;
 }
 a[href^="mailto:"]	{padding-left:16px;
-	background:url(http://bb9z.home.lc/EIS/link/mail.png) no-repeat left;
+	background:url("http://bb9z.googlecode.com/hg/blog/resource/link/mail.png") no-repeat left;
 }
 a[href^="ed2k://"]	{padding-left:16px;
-	background:url(http://bb9z.home.lc/EIS/link/ed2k.png) no-repeat left;
+	background:url("http://bb9z.googlecode.com/hg/blog/resource/link/ed2k.png") no-repeat left;
 }
 a[href*="BB9z"],a[href*="BBservice"],a[href^="http://my.opera.com"],a[href$="bb9z"]{
 	padding-right:0;
 	background-image:none;
 }
-a[href^="https:"]	{background-image:url("http://bb9z.home.lc/EIS/link/sl.png");}
-a[href*="ied2k.com"]	{background-image:url("http://bb9z.home.lc/EIS/link/l2ied2k.png");}
-a[href*="veryCD.com"]	{background-image:url("http://bb9z.home.lc/EIS/link/l2verycd.png");}
-a[href*="emulefans.com"]	{background-image:url("http://bb9z.home.lc/EIS/link/l2emule-fans.png");}
-a[href*="wikipedia.org"]	{background-image:url("http://bb9z.home.lc/EIS/link/l2wikipedia.png");}
+a[href^="https:"]	{background-image:url("http://bb9z.googlecode.com/hg/blog/resource/link/sl.png");}
+a[href*="ied2k.com"]	{background-image:url("http://bb9z.googlecode.com/hg/blog/resource/link/l2ied2k.png");}
+a[href*="veryCD.com"]	{background-image:url("http://bb9z.googlecode.com/hg/blog/resource/link/l2verycd.png");}
+a[href*="emulefans.com"]	{background-image:url("http://bb9z.googlecode.com/hg/blog/resource/link/l2emule-fans.png");}
+a[href*="wikipedia.org"]	{background-image:url("http://bb9z.googlecode.com/hg/blog/resource/link/l2wikipedia.png");}
 
 a[hreflang|="en"]:after	{content:" " url("http://files.myopera.com/BB9z/EIS/countryflag/en-us.png");}
 a[hreflang="en-uk"]:after	{content:" " url("http://files.myopera.com/BB9z/EIS/countryflag/en-uk.png");}
@@ -378,7 +378,7 @@ div.figure{
 div.figure img{
 	max-width:100%;
 	margin:0;
-	background:url("http://bb9z.home.lc/EIS/ui/load16.png") no-repeat center center;
+	background:url("http://bb9z.googlecode.com/hg/blog/resource/ui/load16.png") no-repeat center center;
 }
 div.figure h4{
 	margin:0;
