@@ -978,8 +978,8 @@ div.addcomment{float:none;margin-left:80px;width:auto;}
 .egg:target{background:rgba(250,220,0,0.5);}
 
 /* ltr IE9 */
-.egg .accordion-h{display:none\9;display:none!ie;}
-.egg .tabs{display:none;display:block\9;}
+.egg .accordion-h{display:none\0;display:none!ie;}
+.egg .tabs{display:none;display:block\0;}
 /* End @egg~ */
 
 @media print{
