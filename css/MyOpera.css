@@ -14,7 +14,7 @@ and 悲剧的样式……
 /* body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textare
 a,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgr
 oup,menu,nav,section */
-html	{color:#000;background:#FFF;}
+html	{color:#000;background:#222;}
 ol,ul	{list-style-position:outside;padding-left:1em;}
 li		{list-style:none;}
 table	{border-collapse:collapse;border-spacing:0;}
@@ -40,10 +40,11 @@ code{
 	margin:1em;
 	padding:0.7em 1.3em;
 	background-color:#DDE;
-	font-family:"XHei Mono","文泉驿等宽正黑","文泉驿Unibit",Courier,Monaco,"新宋体"!important;/* For All */
+	font-family:"XHei Mono","文泉驿等宽正黑","文泉驿Unibit",Courier,Monaco,"新宋体";
 	font-size:.7em;
 	border-left:solid #9B9 2px;
 }
+
 #mainwrap blockquote{
 	display:block;
 	margin:0.4em 0.7em;
@@ -100,6 +101,7 @@ body,#myo #myo2{
 	font-size:14px;
 	color:#DDD;
 }
+/* "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", sans-serif */
 h1,h2,h3,h4,h5{
 	font-family:'Microsoft YaHei','微软雅黑','STHeiti','Hei','XHei','文泉驿正黑','WenQuanYi Micro Hei';
 	font-weight:bold;
@@ -140,15 +142,15 @@ a[href^="mailto:"]	{padding-left:16px;
 a[href^="ed2k://"]	{padding-left:16px;
 	background:url("http://bb9z.googlecode.com/hg/blog/resource/link/ed2k.png") no-repeat left;
 }
-a[href*="BB9z"],a[href*="BBservice"],a[href^="http://my.opera.com"],a[href$="bb9z"]{
-	padding-right:0;
-	background-image:none;
-}
 a[href^="https:"]	{background-image:url("http://bb9z.googlecode.com/hg/blog/resource/link/sl.png");}
 a[href*="ied2k.com"]	{background-image:url("http://bb9z.googlecode.com/hg/blog/resource/link/l2ied2k.png");}
 a[href*="veryCD.com"]	{background-image:url("http://bb9z.googlecode.com/hg/blog/resource/link/l2verycd.png");}
 a[href*="emulefans.com"]	{background-image:url("http://bb9z.googlecode.com/hg/blog/resource/link/l2emule-fans.png");}
 a[href*="wikipedia.org"]	{background-image:url("http://bb9z.googlecode.com/hg/blog/resource/link/l2wikipedia.png");}
+a[href*="BB9z"],a[href*="BBservice"],a[href^="http://my.opera.com"],a[href$="bb9z"]{
+	padding-right:0;
+	background-image:none;
+}
 
 a[hreflang|="en"]:after	{content:" " url("http://files.myopera.com/BB9z/EIS/countryflag/en-us.png");}
 a[hreflang="en-uk"]:after	{content:" " url("http://files.myopera.com/BB9z/EIS/countryflag/en-uk.png");}
@@ -932,7 +934,7 @@ div.addcomment{float:none;margin-left:80px;width:auto;}
 	padding:1em;
 	padding-top:0;
 }
-#arc h2,#mylinks h2,#profile h2,#albumsheader,#h2-name,#newcomment h2,#commentpreview{
+#arc h2,#mylinks h2,#albumsheader,#newcomment h2,#commentpreview{
 	background:#111;
 	color:#EEE;
 	font-size:1.2em;
@@ -960,9 +962,23 @@ div.addcomment{float:none;margin-left:80px;width:auto;}
 	column-rule:1px solid #dedede;
 }
 #myfriends img{max-width:95%;margin:10px;}
-#personal #userpic{margin:3em -0.2em 1em 1em;}
 #grouplist h2{margin-top:0.3em;}
 #grouplist p {padding:0.4em 0.5em 0.5em;}
+
+#personal #userpic{
+	float:left;
+	margin-top:1em;
+}
+#personal .nobullets{
+	margin-left:220px;
+	padding-top: 1em;
+}
+#h2-name{
+	position:absolute;
+	left:170px;
+	padding-top:5px;
+	color: #EEEEEE;
+}
 /* End @otherpage */
 
 /* @egg~ */
