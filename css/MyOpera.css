@@ -147,7 +147,7 @@ a[href*="ied2k.com"]	{background-image:url("http://bb9z.googlecode.com/hg/blog/r
 a[href*="veryCD.com"]	{background-image:url("http://bb9z.googlecode.com/hg/blog/resource/link/l2verycd.png");}
 a[href*="emulefans.com"]	{background-image:url("http://bb9z.googlecode.com/hg/blog/resource/link/l2emule-fans.png");}
 a[href*="wikipedia.org"]	{background-image:url("http://bb9z.googlecode.com/hg/blog/resource/link/l2wikipedia.png");}
-a[href*="BB9z"],a[href*="BBservice"],a[href^="http://my.opera.com"],a[href$="bb9z"]{
+a[href^="http://hi.baidu.com/bb9z"],a[href^="http://my.opera.com/"]{
 	padding-right:0;
 	background-image:none;
 }
@@ -978,6 +978,10 @@ div.addcomment{float:none;margin-left:80px;width:auto;}
 	left:170px;
 	padding-top:5px;
 	color: #EEEEEE;
+}
+#aboutme h3{
+	font-size:1.2em;
+	padding:.5em 0 .3em 0;
 }
 /* End @otherpage */
 
