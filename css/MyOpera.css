@@ -15,8 +15,10 @@ and 悲剧的样式……
 a,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgr
 oup,menu,nav,section */
 html	{color:#000;background:#222;}
-ol,ul	{list-style-position:outside;padding-left:1em;}
-li		{list-style:none;}
+ol,ul,dl{list-style-position:outside;padding-left:1em}
+	li{list-style:none;}
+	dt{font-size:1.1em;padding-top:.4em;}
+	dd{padding-left:1em}
 table	{border-collapse:collapse;border-spacing:0;}
 caption,th	{text-align:left;font-style:normal;font-weight:bold;}
 fieldset,img,
