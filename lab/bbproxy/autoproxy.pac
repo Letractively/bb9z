@@ -10,7 +10,7 @@
 function FindProxyForURL(url, host) {
 	// 设定代理服务器信息，你可以指定多个代理服务器
 	// 例如："PROXY w3proxy.netscape.com:8080; SOCKS socks:1080"
-	var P = "PROXY localhost:8580; PROXY 127.0.0.1:8580; DIRECT";
+	var P = "PROXY localhost:8787; DIRECT";
 	var D = "DIRECT";
 	var N = "DENY";		// 阻止连接
 	
@@ -2767,18 +2767,15 @@ if(dnsDomainIs(host,"hljdns4.cn")) return N;
 	//-- END OF AUTO-GENERATED RULES
 	
 	
-	//	bit.ly
-	if(/bit\.ly/i.test(url)) return P;
+    if(/paper\.li/i.test(url)) return P;
+	if(/t\.co/i.test(url)) return P;
 	//	forum.iask.ca
 	if(/forum\.iask\.ca/i.test(url)) return P;
 	//	fpdf.org
 	if(/fpdf\.org/i.test(url)) return P;
 	//	mecsoft.com
 	if(/mecsoft\.com/i.test(url)) return P;
-	//	tinyurl.com
-	if(/tinyurl\.com/i.test(url)) return P;
-	//	w3schools.com
-	if(/w3schools\.com/i.test(url)) return P;
+
 	// wuala
 	if(/content\.wuala\.com/i.test(url)) return P;
 	//	xm1math.net
