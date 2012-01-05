@@ -7,7 +7,6 @@ and 悲剧的样式……
 */
 
 /* Reset
-	参考自YUI3 Reset
 	我是 *{margin:0;padding:0;}的支持者
 */
 *		{margin:0;padding:0;}
@@ -99,13 +98,13 @@ span[title]:hover:after{
 
 /* 字体 */
 body,#myo #myo2{
-	font-family:'Microsoft YaHei','微软雅黑','STHeiti','Hei','XHei','文泉驿点阵正黑','文泉驿正黑','WenQuanYi Micro Hei','lucida sans unicode',arial,helvetica,sans-serif;
+	font-family:'XHei','Hiragino Sans GB','Microsoft YaHei','微软雅黑','Hei','文泉驿点阵正黑','文泉驿正黑','WenQuanYi Micro Hei',helvetica,sans-serif;
 	font-size:14px;
 	color:#DDD;
 }
 /* "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", sans-serif */
 h1,h2,h3,h4,h5{
-	font-family:'Microsoft YaHei','微软雅黑','STHeiti','Hei','XHei','文泉驿正黑','WenQuanYi Micro Hei';
+	font-family:'XHei','Hiragino Sans GB','Microsoft YaHei','微软雅黑','STHeiti','文泉驿正黑','WenQuanYi Micro Hei';
 	font-weight:bold;
 }
 p + p	{text-indent:2em;}
